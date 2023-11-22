@@ -40,11 +40,12 @@ man or help:
 
 Read for this task:
 
-- [Linux and Mac OS users]()
-- [Windows users]()
+- [Linux and Mac OS users](https://askubuntu.com/questions/61557/how-do-i-set-up-ssh-authentication-keys)
+- [Windows users](https://docs.rackspace.com/docs/generating-rsa-keys-with-ssh-puttygen)
+
 man: `ssh-keygen`
 
-You will soon have to manage your own servers concept page hosted on remote data centers. We need to set them up with your RSA public key so that you can access them via SSH.
+You will soon have to manage your own servers concept page hosted on remote [data centers](https://www.youtube.com/watch?v=iuqXFC_qIvA&t=46s). We need to set them up with your RSA public key so that you can access them via SSH.
 
 Create a RSA key pair.
 
@@ -151,11 +152,11 @@ Requirements:
 
 #### [9. To file, or not to file]()
 
-Write a Bash script that gives you information about the school file.
+Write a Bash script that gives you information about the `school` file.
 
 Requirements:
 
-- You must use if and, else (case is forbidden)
+- You must use `if` and, `else` (`case` is forbidden)
 - Your Bash script should check if the file exists and print:
    - if the file exists: `school file exists`
    - if the file does not exist: `school file does not exist`
@@ -195,7 +196,7 @@ Requirements:
 
 #### [12. Tell the story of passwd]()
 
-
+![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/03ca27392c6338e696fc0c3b08765f02c98457a1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231122T131549Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=52ea8dfef9543fb209d7707253ccf006de1a1c7717b66944f4dba13aa13dc355)
 Read:
 
 - [IFS (internal field separator)]()
@@ -213,15 +214,15 @@ Requirements:
 
 #### [13. Let's parse Apache logs]()
 
+![image](https://intranet.alxswe.com/images/contents/sysadmin/projects/80/such_awk.jpg)
 
-
-[Apache]() is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
+[Apache](https://en.wikipedia.org/wiki/Apache_HTTP_Server) is among the most popular web servers in the world, serving 50% of all active websites, no doubt that you will have to interact with it within your career.
 
 As a Full-Stack Software Engineer, you have to master the art of parsing log files. Today we will do a simple parsing of Apache log access files.
 
 Today the Customer Support department reported that a user reported that the site is being “buggy”. Not being a detailed description, you want to have a look at the Apache logs and gather data about the traffic.
 
-Write a Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
+Write a Bash script that displays the visitor IP along with the [HTTP status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes) from the Apache log file.
 
 Requirement:
 
