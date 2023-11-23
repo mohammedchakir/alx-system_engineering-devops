@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Script to display time for 24 hours and 59 minutes
+
+for hour in {0..23};
+do
+    echo "Hour: $hour"
+
+    for minute in {1..59};
+do
+        echo $minute
+    done
+done
