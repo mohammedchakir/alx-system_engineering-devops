@@ -12,6 +12,7 @@ This repository contains programs written for the system engineering devops.
 - [0x02. Shell, I/O Redirections and filters](0x02-shell_redirections)
 - [0x03. Shell, init files, variables and expansions](0x03-shell_variables_expansions)
 - [0x04. Loops, conditions and parsing](0x04-loops_conditions_and_parsing)
+- [0x05. Processes and signals](0x05-processes_and_signals)
 
 
 
