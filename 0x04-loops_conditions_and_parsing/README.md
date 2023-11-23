@@ -36,7 +36,7 @@ man or help:
 
 ## *Tasks:*
 
-#### [0. Create a SSH RSA key pair]()
+#### [0. Create a SSH RSA key pair](0-RSA_public_key.pub)
 
 Read for this task:
 
@@ -58,7 +58,7 @@ Requirements:
 - SSH and RSA keys will be covered in depth in a later project.
 
 
-#### [1. For Best School loop]()
+#### [1. For Best School loop](1-for_best_school)
 
 Write a Bash script that displays `Best School` 10 times.
 
@@ -72,7 +72,7 @@ Note that:
 - The second line of my Bash scripts is a comment explaining what it is doing
 
     
-#### [2. While Best School loop]()
+#### [2. While Best School loop](2-while_best_school)
 
 Write a Bash script that displays `Best School` 10 times.
 
@@ -80,7 +80,7 @@ Requirements:
 
 - You must use the `while` loop (`for` and `until` are forbidden)
 
-#### [3. Until Best School loop]()
+#### [3. Until Best School loop](3-until_best_school)
 
 Write a Bash script that displays `Best School` 10 times.
 
@@ -89,7 +89,7 @@ Requirements:
 - You must use the `until` loop (`for` and `while` are forbidden)
 
     
-#### [4. If 9, say Hi!]()
+#### [4. If 9, say Hi!](4-if_9_say_hi)
 
 Write a Bash script that displays `Best School` 10 times, but for the 9th iteration, displays `Best School` and then Hi on a new line.
 
@@ -98,7 +98,7 @@ Requirements:
 - You must use the `while` loop (`for` and `until` are forbidden)
 - You must use the `if` statement
 
-#### [5. 4 bad luck, 8 is your chance]()
+#### [5. 4 bad luck, 8 is your chance](5-4_bad_luck_8_is_your_chance)
 
 Write a Bash script that loops from 1 to 10 and:
 
@@ -111,7 +111,7 @@ Requirements:
 - You must use the `while` loop (`for` and `until` are forbidden)
 - You must use the `if`, `elif` and `else` statements
 
-#### [6. Superstitious numbers]()
+#### [6. Superstitious numbers](6-superstitious_numbers)
 
 Write a Bash script that displays numbers from 1 to 20 and:
 
@@ -124,7 +124,7 @@ Requirements:
 - You must use the `while` loop (`for` and `until` are forbidden)
 - You must use the `case` statement
 
-#### [7. Clock]()
+#### [7. Clock](7-clock)
 
 Write a Bash script that displays the time for 12 hours and 59 minutes:
 
@@ -137,7 +137,7 @@ Requirements:
 - Note that in this example, we only display the first 70 lines using the `head` command.
 
 
-#### [8. For ls]()
+#### [8. For ls](8-for_ls)
 
 Write a Bash script that displays:
 
@@ -150,7 +150,7 @@ Requirements:
 - You must use the for loop (while and until are forbidden)
 - Do not display hidden files
 
-#### [9. To file, or not to file]()
+#### [9. To file, or not to file](9-to_file_or_not_to_file)
 
 Write a Bash script that gives you information about the `school` file.
 
@@ -166,7 +166,7 @@ Requirements:
    - if the file is a regular file: `school is a regular file`
    - if the file is not a regular file: (nothing)
 
-#### [10. FizzBuzz]()
+#### [10. FizzBuzz](10-fizzbuzz)
 
 Write a Bash script that displays numbers from 1 to 100.
 
@@ -178,7 +178,7 @@ Requirements:
 - Otherwise, displays the number
 - In a list format
 
-#### [11. Read and cut]()
+#### [11. Read and cut](100-read_and_cut)
 
 help: `read`
 
@@ -194,14 +194,14 @@ Requirements:
 
 - You must use the `while` loop (`for` and `until` are forbidden)
 
-#### [12. Tell the story of passwd]()
+#### [12. Tell the story of passwd](101-tell_the_story_of_passwd)
 
 ![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/03ca27392c6338e696fc0c3b08765f02c98457a1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231122T131549Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=52ea8dfef9543fb209d7707253ccf006de1a1c7717b66944f4dba13aa13dc355)
 
 Read:
 
-- [IFS (internal field separator)]()
-- [Understanding /etc/passwd
+- [IFS (internal field separator)](https://tldp.org/LDP/abs/html/internalvariables.html)
+- [Understanding /etc/passwd](https://www.cyberciti.biz/faq/understanding-etcpasswd-file-format/)
 
 The file `/etc/passwd` has already been covered in a previous project and you should be familiar with it. Today we will make up a story based on it.
 
@@ -213,7 +213,7 @@ Requirements:
 
 - You must use the `while` loop (`for` and `until` are forbidden)
 
-#### [13. Let's parse Apache logs]()
+#### [13. Let's parse Apache logs](102-lets_parse_apache_logs)
 
 ![image](https://intranet.alxswe.com/images/contents/sysadmin/projects/80/such_awk.jpg)
 
@@ -234,7 +234,7 @@ Requirement:
 - You are not allowed to use `while`, `for`, `until` and `cut`
 - Download and commit the apache-access.log file along with your answers files
 
-#### [14. Dig the data]()
+#### [14. Dig the data](103-dig_the-data)
 
 Now that you’ve parsed the Apache log file, let’s sort the data so you can get a better idea of what is going on.
 
