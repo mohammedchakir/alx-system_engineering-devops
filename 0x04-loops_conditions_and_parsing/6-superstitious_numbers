@@ -8,15 +8,15 @@ do
     case $counter in
         4)
             echo "4"
-            echo "Bad Luck from China"
+            echo "bad luck from China"
             ;;
         9)
             echo "9"
-            echo "Bad Luck from Japan"
+            echo "bad luck from Japan"
             ;;
         17)
             echo "17"
-            echo "Bad Luck from Italy"
+            echo "bad luck from Italy"
             ;;
         *)
             echo $counter
