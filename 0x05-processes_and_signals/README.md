@@ -37,11 +37,11 @@ For those who want to know more and learn about all signals, check out [this art
 
 ## *Tasks:*
 
-#### [0. What is my PID]()
+#### [0. What is my PID](0-what-is-my-pid)
 
 Write a Bash script that displays its own PID.
 
-#### [1. List your processes]()
+#### [1. List your processes](1-list_your_processes)
 
 Write a Bash script that displays a list of currently running processes.
 
@@ -51,7 +51,7 @@ Requirements:
 - Display in a user-oriented format
 - Show process hierarchy
 
-#### [2. Show your Bash PID]()
+#### [2. Show your Bash PID](2-show_your_bash_pid)
 
 Using your previous exercise command, write a Bash script that displays lines containing the `bash` word, thus allowing you to easily get the PID of your Bash process.
 
@@ -61,7 +61,7 @@ Requirements:
 - The third line of your script must be `# shellcheck disable=SC2009` (for more info about ignoring `shellcheck` error [here](https://github.com/koalaman/shellcheck/wiki/Ignore))
 
 
-#### [3. Show your Bash PID made easy]()
+#### [3. Show your Bash PID made easy](3-show_your_bash_pid_made_easy)
 
 Write a Bash script that displays the PID, along with the process name, of processes whose name contain the word `bash`.
 
@@ -75,7 +75,7 @@ Here we can see that:
 - For the second iteration: `bash` PID is `4404` and that the `3-show_your_bash_pid_made_easy` script PID is `4557`
 
 
-#### [4. To infinity and beyond]()
+#### [4. To infinity and beyond](4-to_infinity_and_beyond)
 
 Write a Bash script that displays `To infinity and beyond` indefinitely.
 
@@ -83,7 +83,7 @@ Requirements:
 
 In between each iteration of the loop, add a `sleep 2`
 
-#### [5. Don't stop me now!]()
+#### [5. Don't stop me now!](5-dont_stop_me_now)
 
 We stopped our `4-to_infinity_and_beyond` process using `ctrl+c` in the previous task, there is actually another way to do this.
 
@@ -96,9 +96,8 @@ Requirements:
 
 I opened 2 terminals in this example, started by running my `4-to_infinity_and_beyond` Bash script in terminal #0 and then moved on terminal #1 to run `5-dont_stop_me_now`. We can then see in terminal #0 that my process has been terminated.
 
-
     
-#### [6. Stop me if you can]()
+#### [6. Stop me if you can](6-stop_me_if_you_can)
 
 Write a Bash script that stops `4-to_infinity_and_beyond` process.
 
@@ -106,7 +105,7 @@ Requirements:
 
 - You cannot use `kill` or `killall`
 
-#### [7. Highlander]()
+#### [7. Highlander](7-highlander)
 
 Write a Bash script that displays:
 
@@ -118,13 +117,13 @@ Make a copy of your `6-stop_me_if_you_can` script, name it `67-stop_me_if_you_ca
 
 I started `7-highlander` in Terminal #0 and then run `67-stop_me_if_you_can` in terminal #1, for every iteration we can see `I am invincible!!!` appearing in terminal #0.
 
-#### [8. Beheaded process]()
+#### [8. Beheaded process](8-beheaded_process)
 
 Write a Bash script that kills the process `7-highlander`.
 
 I started `7-highlander` in Terminal #0 and then run `8-beheaded_process` in terminal #1 and we can see that the `7-highlander` has been killed.
 
-#### [9. Process and PID file]()
+#### [9. Process and PID file](100-process_and_pid_file)
 
 Write a Bash script that:
 
@@ -139,7 +138,7 @@ Write a Bash script that:
 Executing the `100-process_and_pid_file` script and killing it with `ctrl+c`.
 Starting `100-process_and_pid_file` in the terminal #0 and then killing it in the terminal #1.
 
-#### [10. Manage my process]()
+#### [10. Manage my process](101-manage_my_process)
 
 ![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/37975393ead381f4d27f268f7337c6d3013b4991.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231123T142503Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=10045f7c0a0d22e728121afef790a30ccad4dde3ea19298b6e79634cc281c686)
 
@@ -182,7 +181,7 @@ Requirements:
 Note that this init script is far from being perfect (but good enough for the sake of manipulating process and PID file), for example we do not handle the case where we check if a process is already running when doing `./101-manage_my_process start`, in our case it will simply create a new process instead of saying that it is already started.
 
  
-#### [11. Zombie]()
+#### [11. Zombie](102-zombie.c)
 
 ![image](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/255/C6mO7b3.jpg)
 
@@ -206,17 +205,4 @@ int infinite_while(void)
 }
 ```
 In Terminal #0, I start by compiling `102-zombie.c` and executing `zombie` which creates 5 zombie processes. In Terminal #1, I display the list of processes and look for lines containing `Z+.*<defunct>` which catches zombie process.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
