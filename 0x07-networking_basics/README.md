@@ -62,7 +62,7 @@ man or help:
 
 ## *Tasks:*
 
-#### [0. OSI model]()
+#### [0. OSI model](0-OSI_model)
 
 OSI (Open Systems Interconnection) is an abstract model to describe layered communication and computer network design. The idea is to segregate the different parts of what make communication possible.
 
@@ -97,7 +97,7 @@ How is the OSI model organized?
    2- From the lowest to the highest level
    3- Randomly
 
-#### [1. Types of network]()
+#### [1. Types of network](1-types_of_network)
 
 ![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2bce9f33a5c1b39a44597ab04a1b9050e7f2c5fe319fb5a85f39fee51885e168)
 
@@ -123,7 +123,7 @@ What network do you use when you browse www.google.com from your smartphone (not
    3- LAN
 
     
-#### [2. MAC and IP address]()
+#### [2. MAC and IP address](2-MAC_and_IP_address)
 
 ![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c05918fc7fe02cebfa1eb9fb948b439488975bb4912c84b2da842973767ad057)
 
@@ -142,7 +142,7 @@ What is an IP address?
    3- Is a number that network devices use to connect to networks
 
     
-#### [3. UDP and TCP]()
+#### [3. UDP and TCP](3-UDP_and_TCP)
 
 ![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2b155331cf66291e3768b6734bc29d861a73c6abfa87e3e58cca40a1689eb3fb)
 
@@ -161,7 +161,7 @@ Questions:
    2- `May I increase the rate at which I am sending you boxes?`
 
     
-#### [4. TCP and UDP ports]()
+#### [4. TCP and UDP ports](4-TCP_and_UDP_ports)
 
 Once packets have been sent to the right network device using IP using either UDP or TCP as a mode of transportation, it needs to actually enter the network device.
 
@@ -181,7 +181,7 @@ Write a Bash script that displays listening ports:
 - That shows the PID and name of the program to which each socket belongs
 
     
-#### [5. Is the host on the network]()
+#### [5. Is the host on the network](5-is_the_host_on_the_network)
 
 
 
