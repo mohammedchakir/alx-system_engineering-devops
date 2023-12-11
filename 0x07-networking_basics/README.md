@@ -73,7 +73,7 @@ It is organized from the lowest level to the highest level:
 
 Keep in mind that the OSI model is a concept, it’s not even tangible. The OSI model doesn’t perform any functions in the networking process. It is a conceptual framework so we can better understand complex interactions that are happening. Most of the functionality in the OSI model exists in all communications systems.
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/4e6a0ad87a65d7054248.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=f6679a4947db09fe144df2a0d1bf36834861b196a335e23f033b0e1d9996136b)
+![4e6a0ad87a65d7054248](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/f9f69716-5866-4180-ba38-b47cd65f2d2d)
 
 In this project we will mainly focus on:
 
@@ -81,7 +81,7 @@ In this project we will mainly focus on:
 - On the Network layer with IP and ICMP
 The image bellow describes more concretely how you can relate to every level.
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/0fc96bd99faa7941b18bcae4c5f90c6acd11791d.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=b7b2fb89a33778c6cc75d76f55b59ba6a5c8f571ad8ad74c9ad8c4e81d2c6ce8)
+![0fc96bd99faa7941b18bcae4c5f90c6acd11791d](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/ed2ba039-a190-4979-aeb0-f0ead2715dc9)
 
 Questions:
 
@@ -99,7 +99,7 @@ How is the OSI model organized?
 
 #### [1. Types of network](1-types_of_network)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/4b995d4f8078b44afa968d68a98035d2bd7e8fac.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2bce9f33a5c1b39a44597ab04a1b9050e7f2c5fe319fb5a85f39fee51885e168)
+![0fc96bd99faa7941b18bcae4c5f90c6acd11791d](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/ed2ba039-a190-4979-aeb0-f0ead2715dc9)
 
 LAN connect local devices together, WAN connects LANs together, and WANs are operating over the Internet.
 
@@ -125,7 +125,7 @@ What network do you use when you browse www.google.com from your smartphone (not
     
 #### [2. MAC and IP address](2-MAC_and_IP_address)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/1e348ba3bcbb094b02922f821ffeb3d8c5438b7b.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=c05918fc7fe02cebfa1eb9fb948b439488975bb4912c84b2da842973767ad057)
+![1e348ba3bcbb094b02922f821ffeb3d8c5438b7b](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/40c15156-b4e3-44bf-8680-f24350fa65c1)
 
 Questions:
 
@@ -144,7 +144,7 @@ What is an IP address?
     
 #### [3. UDP and TCP](3-UDP_and_TCP)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T123733Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=2b155331cf66291e3768b6734bc29d861a73c6abfa87e3e58cca40a1689eb3fb)
+![3d92e3c4a470f8ecf4c73db511fcbbadaa002e1c](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/e8092704-f22a-4818-82fa-d601a854b3f0)
 
 Let’s fill the empty parts in the drawing above.
 
@@ -183,7 +183,7 @@ Write a Bash script that displays listening ports:
     
 #### [5. Is the host on the network](5-is_the_host_on_the_network)
 
-
+![giphy](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/be7c3515-ea5d-4a7f-aef0-9519d53a66a5)
 
 The Internet Control Message Protocol (ICMP) is a protocol in the Internet protocol suite. It is used by network devices, to check if other network devices are available on the network. The command `ping` uses ICMP to make sure that a network device remains online or to troubleshoot issues on the network.
 
