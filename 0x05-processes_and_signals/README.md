@@ -133,14 +133,14 @@ Write a Bash script that:
 - Displays `Y U no love me?!` when receiving a SIGINT signal
 - Deletes the file `/var/run/myscript.pid` and terminates itself when receiving a SIGQUIT or SIGTERM signal
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/d8ecfe9109334898b9540ffd20cf64d1c06f0c09.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231123T142503Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=cb829cbeab2d798b5e2307459fd65d33d3615369ecced555dca39de7e6842538)
+![d8ecfe9109334898b9540ffd20cf64d1c06f0c09](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/83cef324-e167-49b5-aab0-244bfe057085)
 
 Executing the `100-process_and_pid_file` script and killing it with `ctrl+c`.
 Starting `100-process_and_pid_file` in the terminal #0 and then killing it in the terminal #1.
 
 #### [10. Manage my process](101-manage_my_process)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/37975393ead381f4d27f268f7337c6d3013b4991.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231123T142503Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=10045f7c0a0d22e728121afef790a30ccad4dde3ea19298b6e79634cc281c686)
+![37975393ead381f4d27f268f7337c6d3013b4991](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/f824bf9d-f838-44a6-9bc8-49c55a916d01)
 
 Read:
 
