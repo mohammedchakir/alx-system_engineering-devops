@@ -196,7 +196,7 @@ Requirements:
 
 #### [12. Tell the story of passwd](101-tell_the_story_of_passwd)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/03ca27392c6338e696fc0c3b08765f02c98457a1.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231122%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231122T131549Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=52ea8dfef9543fb209d7707253ccf006de1a1c7717b66944f4dba13aa13dc355)
+![03ca27392c6338e696fc0c3b08765f02c98457a1](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/03784ff4-7db6-4f26-9b35-144e7c068f42)
 
 Read:
 
