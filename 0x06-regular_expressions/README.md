@@ -24,7 +24,7 @@ Read or watch:
 
 #### [0. Simply matching School](0-simply_match_school.rb)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/ec65557f0da1fbfbff6659413885e4d4822f5b1d.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231126T210149Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=13e4df4f6a31044e10de31797c4a2b8b0a712ddec7015374c8f1a3e33b270b94)
+<img width="969" alt="ec65557f0da1fbfbff6659413885e4d4822f5b1d" src="https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/4cbb52a6-83e3-475d-a8f3-8216b5270c27">
 
 Requirements:
 
@@ -34,7 +34,7 @@ Requirements:
     
 #### [1. Repetition Token #0](1-repetition_token_0.rb)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/e7db3c377d46453588fc84f3a975661d142fee91.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231126T210149Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a5c72c26b475117683520d70a7f87468583656a665a21a871da6ea6d404b10c4)
+<img width="959" alt="e7db3c377d46453588fc84f3a975661d142fee91" src="https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/c7ab44e8-35ae-4337-81a4-750a6238fb7a">
 
 Requirements:
 
@@ -43,7 +43,7 @@ Requirements:
 
 #### [2. Repetition Token #1](2-repetition_token_1.rb)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/c59ff11db195d5cf17d1790a5141ae2f234786d2.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231126T210149Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=92b2844c9f5f114811a55f058900414548d8f1b88905579992595f24237c4d0a)
+<img width="967" alt="c59ff11db195d5cf17d1790a5141ae2f234786d2" src="https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/acc82852-f00b-4780-a21b-fd03ddb31326">
 
 Requirements:
 
@@ -52,7 +52,7 @@ Requirements:
 
 #### [3. Repetition Token #2](3-repetition_token_2.rb)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/3b6bf4aeca6a0c2de584e7f5d68d11eef57ce205.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231126T210149Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3f0ef07a1eb038b7c76462caaf8a726012ccdbed5d881886f543c5956d66b9c5)
+<img width="974" alt="3b6bf4aeca6a0c2de584e7f5d68d11eef57ce205" src="https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/e90eb29a-2e4d-4fee-953f-c2c782dafdd9">
 
 Requirements:
 
@@ -61,7 +61,7 @@ Requirements:
     
 #### [4. Repetition Token #3](4-repetition_token_3.rb)
 
-![image](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/f8dbcb9cf5ae569a8645027dc46e81cb372ce28e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20231126%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231126T210149Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=bf8c835aac26a31784f8bd0355c59bbcc7bc1a5d40f734b8e41751b50489226d)
+<img width="956" alt="f8dbcb9cf5ae569a8645027dc46e81cb372ce28e" src="https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/0c5d217a-6f94-43cc-9f6a-8db701af08a1">
 
 Requirements:
 
