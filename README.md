@@ -16,6 +16,7 @@ This repository contains programs written for the system engineering devops.
 - [0x06. Regular expression](0x06-regular_expressions)
 - [0x07. Networking basics #0](0x07-networking_basics)
 - [0x08. Networking basics #1](0x08-networking_basics_2)
+- [0x09. Web infrastructure design](0x09-web_infrastructure_design)
 
 
 
