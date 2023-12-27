@@ -1,6 +1,6 @@
 ## *Distributed Web Infrastructure:*
 
-![Image of a distributed web infrastructure](1-distributed_web_infrastructure.png)
+<img width="750" alt="Screenshot 2023-12-25 at 15 31 28" src="https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/22ed3e8e-6990-4792-8256-5fab9902a404">
 
 
 ### Description
