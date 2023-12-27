@@ -1,6 +1,6 @@
 ## *Simple Web Stack:*
 
-![Image of a simple web stack](0-simple_web_stack.png)
+<img width="678" alt="Screenshot 2023-12-25 at 14 56 08" src="https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/f1d47788-2630-4cae-853e-43923e5ee58c">
 
 
 ### Description
