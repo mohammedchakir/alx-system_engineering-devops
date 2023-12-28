@@ -5,12 +5,12 @@
 
 ### Description
 
-This web infrastructure is a scaled up version of the infrastructure described [here](2-secured_and_monitored_web_infrastructure.md). In this version, all SPOFs have been removed and each of the major components (web server, application server, and database servers) have been moved to separate GNU/Linux servers. The SSL protection isn't terminated at the load-balancer and each server's network is protected with a firewall and they're also monitored.
+This enhanced web infrastructure represents an evolved version of the previously detailed setup, found in [this document](2-secured_and_monitored_web_infrastructure.md). In this iteration, all Single Points Of Failure (SPOFs) have been eliminated. Key components, namely the web, application, and database servers, now independently operate on separate GNU/Linux servers. SSL protection extends beyond the load-balancer, with each server's network fortified by firewalls and subject to continuous monitoring.
 
-### Specifics About This Infrastructure
+### Infrastructure Enhancements
 
-- The addition of a firewall between each server.<br/>This protects each server from unwanted and unauthorized users rather than protecting a single server.
+- **Dedicated Firewalls for Each Server**: Individual firewalls for each server enhance security, shielding against unauthorized access and undesirable traffic for each component, as opposed to a singular point of defense.
 
-### Issues With This Infrastructure
+### Infrastructure Challenges
 
-- High maintenance costs.<br/>Moving each of the major components to its own server, means that more servers would have to be bought and the company's electricity bill would rise along with the introduction of new servers. Some of the company's funds would have to be used to buy the servers and pay for the electricity consumption needed to keep the servers (including the new and old ones) running.
+- **Elevated Maintenance Costs**: Segmenting major components across multiple servers necessitates additional expenditures. This includes the initial investment in extra servers and the consequent increase in electricity consumption. The financial implications extend to both purchasing new hardware and sustaining the operational costs of the expanded server array.
