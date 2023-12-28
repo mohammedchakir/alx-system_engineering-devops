@@ -5,17 +5,17 @@
 
 ### Description
 
-This is a distributed web infrastructure that atttempts to reduce the traffic to the primary server by distributing some of the load to a replica server with the aid of a server responsible for balancing the load between the two servers (primary and replica).
+This architecture features a distributed web infrastructure designed to mitigate traffic on the primary server by offloading some tasks to a secondary, replica server. This is facilitated through a load-balancing server that allocates workload between the primary and replica servers.
 
-### Specifics About This Infrastructure
+### Infrastructure Details
 
-- The distribution algorithm the load balancer is configured with and how it works.<br/>The HAProxy load balancer is configured with the *Round Robin* distribution algorithm. This algorithm works by using each server behind the load balancer in turns, according to their weights. It’s also probably the smoothest and most fair algorithm as the servers’ processing time stays equally distributed. As a dynamic algorithm, *Round Robin* allows server weights to be adjusted on the go.
-- The setup enabled by the load-balancer.<br/>The HAProxy load-balancer is enabling an *Active-Passive* setup rather than an *Active-Active* setup. In an *Active-Active* setup, the load balancer distributes workloads across all nodes in order to prevent any single node from getting overloaded. Because there are more nodes available to serve, there will also be a marked improvement in throughput and response times. On the other hand, in an *Active-Passive* setup, not all nodes are going to be active (capable of receiving workloads at all times). In the case of two nodes, for example, if the first node is already active, the second node must be passive or on standby. The second or the next passive node can become an active node if the preceding node is inactive.
-- How a database *Primary-Replica* (*Master-Slave*) cluster works.<br/>A *Primary-Replica* setup configures one server to act as the *Primary* server and the other server to act as a *Replica* of the *Primary* server. However, the *Primary* server is capable of performing read/write requests whilst the *Replica* server is only capable of performing read requests. Data is synchronized between the *Primary* and *Replica* servers whenever the *Primary* server executes a write operation.
-- The difference between the *Primary* node and the *Replica* node in regard to the application.<br/>The *Primary* node is responsible for all the write operations the site needs whilst the *Replica* node is capable of processing read operations, which decreases the read traffic to the *Primary* node.
+- **Load Balancing Algorithm**: The HAProxy load balancer employs the Round Robin algorithm, which systematically allocates server requests in a sequential and equitable manner, based on server weights. This dynamic approach allows for real-time adjustments in server weighting.
+- **Load Balancer Configuration**: The HAProxy facilitates an Active-Passive configuration, differing from Active-Active setups where workloads are evenly distributed across all nodes. In this scenario, not all nodes are concurrently active, with passive nodes ready to take over should the active node become unavailable.
+- **Primary-Replica Database Dynamics**: In this setup, the Primary server handles both read and write operations, while the Replica server is limited to read-only tasks. Synchronization occurs following write operations on the Primary server.
+- **Application Role of Nodes**: The Primary node manages all write-related tasks for the site, while the Replica node is tasked with read operations, thereby reducing the read load on the Primary node.
 
-### Issues With This Infrastructure
+### Infrastructure Challenges
 
-- There are multiple SPOF (Single Point Of Failure).<br/>For example, if the Primary MySQL database server is down, the entire site would be unable to make changes to the site (including adding or removing users). The server containing the load balancer and the application server connecting to the primary database server are also SPOFs.
-- Security issues.<br/>The data transmitted over the network isn't encrypted using an SSL certificate so hackers can spy on the network. There is no way of blocking unauthorized IPs since there's no firewall installed on any server.
-- No monitoring.<br/>We have no way of knowing the status of each server since they're not being monitored.
+- **Single Points of Failure**: Multiple vulnerabilities exist, such as the potential for site dysfunction if the Primary MySQL database is down, affecting site modifications. Additionally, the server hosting the load balancer and the application server linked to the primary database are also critical points.
+- **Security Concerns**: Without SSL encryption, data transmission is vulnerable to interception. The absence of firewalls across servers further exacerbates the risk of unauthorized access.
+- **Lack of Monitoring**: The absence of a server monitoring system means there is no real-time awareness of each server's status.
