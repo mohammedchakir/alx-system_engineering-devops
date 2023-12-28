@@ -5,16 +5,16 @@
 
 ### Description
 
-This is a 3-server web infrastructure that is secured, monitored, and serves encrypted traffic.
+This architecture encompasses a trio of web servers, characterized by enhanced security, continuous monitoring, and encrypted data transmission.
 
-### Specifics About This Infrastructure
+### Infrastructure Highlights
 
-- The purpose of the firewalls.<br/>The firewalls are for protecting the network (web servers, anyway) from unwanted and unauthorized users by acting as an intermediary between the internal network and the external network and blocking the incoming traffic matching the aforementioned criteria. 
-- The purpose of the SSL certificate.<br/>The SSL certificate is for encrypting the traffic between the web servers and the external network to prevent man-in-the-middle attacks (MITM) and network sniffers from sniffing the traffic which could expose valuable information. The SSL certs ensure privacy, integrity, and identification.
-- The purpose of the monitoring clients.<br/>The monitoring clients are for monitoring the servers and the external network. They analyse the performance and operations of the servers, measure the overall health, and alert the administrators if the servers are not performing as expected. The monitoring tool observes the servers and provides key metrics about the servers' operations to the administrators. It automatically tests the accessibility of the servers, measures response time, and alerts for errors such as corrupt/missing files, security vulnerabilities/violations, and many other issues. 
+- **Function of Firewalls**: The firewalls serve as a defensive barrier, shielding the web servers from unauthorized and undesirable network traffic. They act as intermediaries between internal and external networks, selectively obstructing traffic that fails to meet set security criteria.
+- **Role of SSL Certificates**: SSL certificates play a crucial role in securing data flow between the web servers and external networks. They thwart man-in-the-middle (MITM) attacks and network eavesdropping, thereby safeguarding sensitive information. These certificates are instrumental in ensuring confidentiality, data integrity, and authentication.
+- **Monitoring Client Objectives**: Monitoring clients scrutinize server performance and network interactions. They assess server health, promptly notify administrators of any deviations from expected performance levels, and offer comprehensive metrics on server operations. These tools autonomously verify server accessibility, track response times, and signal various anomalies, including file corruption, security breaches, and other potential complications.
 
-### Issues With This Infrastructure
+### Infrastructure Challenges
 
-- Terminating SSL at the load balancer level would leave the traffic between the load balancer and the web servers unencrypted.
-- Having one MySQL server is an issue because it is not scalable and can act as a single point of failure for the web infrastructure.
-- Having servers with all the same components would make the components contend for resources on the server like CPU, Memory, I/O, etc., which can lead to poor performance and also make it difficult to locate the source of the problem. A setup such as this is not easily scalable. 
+- **SSL Termination at Load Balancer**: Positioning SSL termination at the load balancer results in unencrypted data transmission between the load balancer and web servers, posing a security risk.
+- **Single MySQL Server Limitations**: The solitary MySQL server presents scalability challenges and constitutes a single point of failure within the web infrastructure.
+- **Homogeneous Server Components**: Uniformity in server components leads to resource competition (CPU, memory, I/O), potentially degrading performance. This setup complicates problem diagnosis and hampers scalability.
