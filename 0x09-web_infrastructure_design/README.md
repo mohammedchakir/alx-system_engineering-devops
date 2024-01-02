@@ -92,8 +92,6 @@ Requirements:
     -   Downtime when maintenance needed (like deploying new code web server needs to be restarted)
     -   Cannot scale if too much incoming traffic
 
-Please, remember that everything must be written in English to further your technical ability in a variety of settings.
-
 
 #### [1. Distributed web infrastructure](1-distributed_web_infrastructure)
 #### [1. Distributed web infrastructure.md](1-distributed_web_infrastructure.md)
@@ -120,7 +118,6 @@ Requirements:
     -   Security issues (no firewall, no HTTPS)
     -   No monitoring
 
-Please, remember that everything must be written in English to further your technical ability in a variety of settings.
 
 #### [2. Secured and monitored web infrastructure](2-secured_and_monitored_web_infrastructure)
 #### [2. Secured and monitored web infrastructure.md](2-secured_and_monitored_web_infrastructure.md)
@@ -145,8 +142,6 @@ Requirements:
     -   Why terminating SSL at the load balancer level is an issue
     -   Why having only one MySQL server capable of accepting writes is an issue
     -   Why having servers with all the same components (database, web server and application server) might be a problem
-
-Please, remember that everything must be written in English to further your technical ability in a variety of settings.
 
 
 #### [3. Scale up](3-scale_up)
