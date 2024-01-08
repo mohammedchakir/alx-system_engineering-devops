@@ -20,6 +20,23 @@ This repository contains programs written for the system engineering devops.
 
 
 
+## Navigation Guide:
+
+To view any project you're interested in accessing, kindly follow these steps:
+
+- clone the repository
+
+    - ```
+      git clone https://github.com/mohammedchakir/alx-system_engineering-devops.git
+      ```
+    - ```
+      cd alx-system_engineering-devops
+      ```
+
+Author📑:
+
+[MOHAMMED CHAKIR](https://github.com/mohammedchakir)
+
 
 
 
