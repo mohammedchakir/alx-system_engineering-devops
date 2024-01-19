@@ -1,5 +1,4 @@
 # Puppet Manifest for Creating a File in /tmp
-
 # Ensure all files end with a new line
 file { '/tmp/school':
 ensure  => file,
