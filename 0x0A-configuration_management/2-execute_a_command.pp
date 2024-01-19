@@ -2,6 +2,6 @@
 
 # Ensure all files end with a new line
 exec { 'killmenow':
-  command => 'pkill -f killmenow',
-  onlyif  => 'pgrep -f killmenow',
+  command => '/usr/bin/pkill -f killmenow',
+  onlyif  => '/usr/bin/pgrep -f killmenow',
 }
