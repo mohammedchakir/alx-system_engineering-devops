@@ -1,6 +1,6 @@
 # Puppet Manifest for Installing Flask using pip3
 package { 'werkzeug':
-  ensure   => '0.16.1',
+  ensure   => '2.1.1',
   provider => 'pip',
 }
 
