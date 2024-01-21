@@ -1,6 +1,6 @@
 # config parametres
 
-Host 18.207.207.161
+Host 107.23.131.117
   IdentityFile ~/.ssh/school
   PasswordAuthentication no
   User ubuntu
