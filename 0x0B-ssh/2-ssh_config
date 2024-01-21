@@ -1,7 +1,6 @@
-# ~/.ssh/config
+# config parametres
 
 Host 18.207.207.161
   IdentityFile ~/.ssh/school
-  PreferredAuthentications publickey
   PasswordAuthentication no
   User ubuntu
