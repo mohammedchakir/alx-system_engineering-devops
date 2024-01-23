@@ -1,1 +1,3 @@
 #!/usr/bin/env bash
+# trying to run Apache
+sudo service apache2 start
