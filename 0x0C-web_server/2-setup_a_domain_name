@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Answer file to provide the domain name
+
+# Your .tech domain name
+echo "myschool.tech"
+
