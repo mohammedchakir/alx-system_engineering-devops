@@ -3,7 +3,6 @@
 # Update package list and install Nginx
 apt-get update
 apt-get install -y nginx
-echo "Hello World!" > /var/www/html/index.html
 utw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.html
 echo "Nginx installed and configured successfully."
-
