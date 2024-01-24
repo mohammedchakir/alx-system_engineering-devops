@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 # Bash script to configure Nginx for a 301 Moved Permanently redirection
 
-sudo apt-get update
+ADD301_REDIRECT="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+
+sudo apt-get update -y
 sudo apt-get install -y nginx
-
-echo "Hello World!" | sudo tee /var/www/html/index.html
-string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com permanent;"
-sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-available/default
-
+sudo chown -R ubuntu /var/www
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.nginx-debian.html'
+sudo sed -i "30i $ADD301_REDIRECT" /etc/nginx/sites-available/default
 sudo service nginx restart
