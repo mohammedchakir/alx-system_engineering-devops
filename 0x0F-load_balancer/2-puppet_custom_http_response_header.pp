@@ -1,43 +1,16 @@
-# 2-puppet_custom_http_response_header.pp
 # Puppet Manifest to configure Nginx with custom HTTP response header on a new Ubuntu machine.
 
-class { 'nginx':
-  ensure  => 'installed',
-  service => 'running',
+exec {'update':
+  command => '/usr/bin/apt-get update',
 }
-
-file { '/etc/nginx/sites-available/default':
-  ensure => present,
-  content => "server {
-    listen 80 default_server;
-    listen [::]:80 default_server;
-
-    server_name _;
-
-    add_header X-Served-By $hostname;
-
-    location / {
-        root /var/www/html;
-        index index.html index.htm;
-    }
-}\n",
-  require => Class['nginx'],
+-> package {'nginx':
+  ensure => 'present',
 }
-
-file { '/var/www/html/index.html':
-  ensure  => present,
-  content => 'Hello, World!',
-  require => File['/etc/nginx/sites-available/default'],
+-> file_line { 'http_header':
+  path  => '/etc/nginx/nginx.conf',
+  match => 'http {',
+  line  => "http {\n\tadd_header X-Served-By \"${hostname}\";",
 }
-
-exec { 'remove default Nginx welcome page':
-  command => 'rm -rf /var/www/html/*',
-  path    => ['/bin', '/usr/bin'],
-  require => File['/var/www/html/index.html'],
+-> exec {'run':
+  command => '/usr/sbin/service nginx restart',
 }
-
-service { 'nginx':
-  ensure  => 'running',
-  require => [File['/etc/nginx/sites-available/default'], Exec['remove default Nginx welcome page']],
-}
-
