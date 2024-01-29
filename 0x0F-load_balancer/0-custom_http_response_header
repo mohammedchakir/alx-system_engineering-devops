@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# Script Description: Configure Nginx with custom HTTP response header on a new Ubuntu machine.
+
+# Install Nginx
+sudo apt-get update
+sudo apt-get install -y nginx
+
+# Create a custom Nginx configuration file
+sudo bash -c 'cat > /etc/nginx/sites-available/default <<EOF
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    server_name _;
+
+    add_header X-Served-By $HOSTNAME;
+
+    location / {
+        root /var/www/html;
+        index index.html index.htm;
+    }
+}
+EOF'
+
+# Remove the default Nginx welcome page
+sudo rm -rf /var/www/html/*
+
+# Restart Nginx to apply changes
+sudo service nginx restart
+
