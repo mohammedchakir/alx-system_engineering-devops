@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Script Name: 0-nginx_likes_port_80.sh
+# Description: Configures Nginx to listen on port 80 of all active IPv4 IPs.
+
+# Install Nginx (if not already installed)
+apt-get update
+apt-get install -y nginx
+
+# Ensure Nginx is stopped before making changes
+systemctl stop nginx
+
+# Edit the Nginx configuration file to listen on port 80
+sed -i 's/\(listen \[::\]:80;\)/# \1\nlisten 80;/' /etc/nginx/sites-available/default
+
+# Restart Nginx to apply the changes
+systemctl start nginx
+
+# Display the active IPv4 IPs and the status of Nginx
+ip -4 addr show scope global | awk '/inet / {print $2}' | cut -d'/' -f1
+systemctl status nginx
+
