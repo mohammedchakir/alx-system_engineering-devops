@@ -3,10 +3,9 @@
 # Update package list and install Nginx
 sudo apt-get update
 sudo apt-get install nginx
-
+sudo utw allow 'Nginx HTTP'
 # start service nginx
 sudo service nginx start
-sudo utw allow 'Nginx HTTP'
 # Create a default HTML page with "Hello World!"
 echo "Hello World!" | sudo tee /var/www/html/index.html
 # Create a new index
