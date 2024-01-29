@@ -5,23 +5,20 @@
 # Enable HAproxy init script
 # Restart HAproxy to apply changes
 
-sudo apt-get update
+sudo apt-get update -y
 sudo apt-get install -y haproxy
 
 
-sudo bash -c 'cat > /etc/haproxy/haproxy.cfg <<EOF
-frontend http_front
+sudo chown -R "$USER" /etc/haproxy/haproxy.cfg
+echo "
+frontend medchakir
     bind *:80
-    stats uri /haproxy?stats
+    mode http
     default_backend http_back
 
 backend http_back
     balance roundrobin
     server 469212-web-01 54.237.26.209:80 check
     server 469212-web-02 34.229.137.28:80 check
-"
-echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
-
-# enable haproxy to be started by init script
-echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
+" >> /etc/haproxy/haproxy.cfg
 sudo service haproxy restart
