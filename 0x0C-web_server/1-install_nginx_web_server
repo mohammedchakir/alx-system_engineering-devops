@@ -14,4 +14,4 @@ echo "Hello World!" > /var/www/html/index.html
 # test Nginx configs
 sudo nginx -t
 # Restart Nginx
-sudo service nginx restart
+sudo service nginx reload
