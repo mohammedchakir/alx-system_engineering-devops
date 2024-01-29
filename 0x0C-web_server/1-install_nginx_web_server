@@ -8,8 +8,7 @@ sudo utw allow 'Nginx HTTP'
 sudo service nginx start
 # Create a default HTML page with "Hello World!"
 echo "Hello World!" | sudo tee /var/www/html/index.html
-# Create a new index
-echo "Hello World!" > /var/www/html/index.html
+
 # test Nginx configs
 sudo nginx -t
 # Restart Nginx
