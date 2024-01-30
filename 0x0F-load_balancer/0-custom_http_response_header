@@ -1,33 +1,15 @@
 #!/usr/bin/env bash
-# Script Description: Configure Nginx with custom HTTP response header on a new Ubuntu machine.
-# Install Nginx
-# Create a custom Nginx configuration file
-# Remove the default Nginx welcome page
-# Restart Nginx to apply changes
-
+# custom http response header for task 0
+# update the package
 sudo apt-get update
-sudo apt-get install -y nginx
-echo "Hello World!" > index.html
-sudo mv index.html /var/www/html
+sudo apt-get install -y nginx 
 
-echo "Ceci n'est pas une page" > 404.html
-sudo mv 404.html /var/www/html
-echo "server {
-   listen 80 default_server;
-   listen [::]:80 default_server;
-   
-   root /var/www/html;
-   index index.html;
-   location /redirect_me {
-      return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-   }
-   error_page 404 /404.html;
-   location = /404.html{
-      internal;
-   }
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/mohammedchakir permanent;"
+sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
-   add_header X-Served-By '$HOSTNAME';
-}" > default
+echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
+string_for_replacement="listen 80 default_server;\n\terror_page 404 \/404.html;\n\tlocation = \/404.html {\n\t\troot \/var\/www\/html;\n\t\tinternal;\n\t}"
+sudo sed -i "s/listen 80 default_server;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 
-sudo mv -f default /etc/nginx/sites-available/default
 sudo service nginx restart
