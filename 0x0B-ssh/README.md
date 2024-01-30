@@ -1,11 +1,11 @@
-0x0B. SSH
-=========
+## *0x0B. SSH*
+
+`DevOps`   `SSH`   `Network`   `SysAdmin`   `Security`
 
 -   By Sylvain Kalache
--   Weight: 1
 
-Background Context
-------------------
+
+## *Background Context:*
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/244/zPVRKhPsUP5lK.gif)
 
@@ -15,9 +15,7 @@ You can access your server information in the [my servers](https://alx-intranet
 
 **Note:** Your server is configured with an Ubuntu 20.04 LTS environment.
 
-Resources
----------
-
+## *Resources:*
 **Read or watch**:
 
 -   [What is a (physical) server - text](https://alx-intranet.hbtn.io/rltoken/dkgW9lKiBRiUZHfq0MDJuw "What is a (physical) server - text")
@@ -42,12 +40,7 @@ Resources
 -   `ssh-keygen`
 -   `env`
 
-Learning Objectives
--------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/0Wgw_i87NIVCfUcRzdZgkg "explain to anyone"), **without the help of Google**:
-
-### General
+## *General:*
 
 -   What is a server
 -   Where servers usually live
@@ -56,8 +49,7 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   How to connect to a remote host using an SSH RSA key pair
 -   The advantage of using `#!/usr/bin/env bash` instead of `/bin/bash`
 
-Requirements
-------------
+## *Requirements*
 
 ### General
 
@@ -69,23 +61,10 @@ Requirements
 -   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
-Your servers
-------------
 
-| Name | Username | IP | State |  |
-| --- | --- | --- | --- | --- |
-| 1733-web-01 | `ubuntu` | `34.139.191.175` | running |
+## *Tasks:*
 
-Actions Toggle Dropdown
-
- |
-
-Tasks
------
-
-### 0\. Use a private key
-
-mandatory
+#### [0. Use a private key]()
 
 Write a Bash script that uses `ssh` to connect to your server using the private key `~/.ssh/school` with the user `ubuntu`.
 
@@ -103,17 +82,7 @@ sylvain@ubuntu$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0B-ssh`
--   File: `0-use_a_private_key`
-
- Done? Help
-
-### 1\. Create an SSH key pair
-
-mandatory
+#### [1. Create an SSH key pair]()
 
 Write a Bash script that creates an RSA key pair.
 
@@ -152,17 +121,7 @@ sylvain@ubuntu$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0B-ssh`
--   File: `1-create_ssh_key_pair`
-
- Done? Help
-
-### 2\. Client configuration file
-
-mandatory
+#### [2. Client configuration file]()
 
 Your machine has an SSH configuration file for the local SSH client, let's configure it to our needs so that you can connect to a server without typing a password. Share your SSH client configuration in your answer file.
 
@@ -220,17 +179,7 @@ ubuntu@magic-server:~$
 
 In the example above, we can see that `ssh` tries to authenticate using `school` and does not try to authenticate using a password. You can replace `98.98.98.98` by the IP of your server for testing purposes.
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0B-ssh`
--   File: `2-ssh_config`
-
- Done? Help
-
-### 3\. Let me in!
-
-mandatory
+#### [3. Let me in!]()
 
 Now that you have successfully connected to your server, we would also like to join the party.
 
@@ -241,16 +190,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNdtrNGtTXe5Tp1EJQop8mOSAuRGLjJ6DW4PqX4wId
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0B-ssh`
-
- Done? Help Get a sandbox
-
-### 4\. Client configuration file (w/ Puppet)
-
-#advanced
+#### [4. Client configuration file (w/ Puppet)]()
 
 Let's practice using Puppet to make changes to our configuration file. Just as in the previous configuration file task, we'd like you to set up your client SSH configuration file so that you can connect to a server without typing a password.
 
@@ -271,8 +211,3 @@ vagrant@ubuntu:~$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0B-ssh`
--   File: `100-puppet_ssh_config.pp`
