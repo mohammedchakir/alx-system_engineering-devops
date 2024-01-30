@@ -1,13 +1,11 @@
-0x0D. Web stack debugging #0
-============================
+## *0x0D. Web stack debugging #0*
 
--   By Sylvain Kalache, co-founder at Holberton School
--   Weight: 1
+`DevOps`   `SysAdmin`   `Scripting`   `Debugging`
+
+By Sylvain Kalache, co-founder at Holberton School
 
 
-Concepts
---------
-
+## *Concepts:*
 *For this project, students are expected to look at these concepts:*
 
 -   [Network basics](https://alx-intranet.hbtn.io/concepts/33)
@@ -16,8 +14,8 @@ Concepts
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/265/uWLzjc8.jpg)
 
-Background Context
-------------------
+## *Background Context:*
+
 
 The Webstack debugging series will train you in the art of debugging. Computers and software rarely work the way we want (that's the "fun" part of the job!).
 
@@ -73,8 +71,7 @@ sylvain@ubuntu:~$
 
 Note that as you cannot use interactive software such as `emacs` or `vi` in your Bash script, everything needs to be done from the command line (including file edition).
 
-Installing Docker
------------------
+## *Installing Docker:*
 
 For this project you will be given a container which you can use to solve the task. **If** you would like to have Docker so that you can experiment with it and/or solve this problem locally, you can install it on your machine, your Ubuntu 14.04 VM, or your Ubuntu 16.04 VM if you upgraded.
 
@@ -83,15 +80,13 @@ For this project you will be given a container which you can use to solve the ta
 -   [Ubuntu 14.04](https://alx-intranet.hbtn.io/rltoken/crVTooJdN8U8wATMvG2-og "Ubuntu 14.04") (Note that Docker for Ubuntu 14 is deprecated and you will have to make some adjustments to the instructions when installing)
 -   [Ubuntu 16.04](https://alx-intranet.hbtn.io/rltoken/wTjFrD8iy96EZW9MFYwa9Q "Ubuntu 16.04")
 
-Resources
----------
+## *Resources:*
 
 **man or help**:
 
 -   `curl`
 
-Requirements
-------------
+## *Requirements:*
 
 ### General
 
@@ -105,14 +100,9 @@ Requirements
 -   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
-Tasks
------
+## *Tasks:*
 
-### 0\. Give me a page!
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [0. Give me a page!]()
 
 Be sure to read the **Docker** concept page
 
@@ -142,9 +132,3 @@ vagrant@vagrant:~$
 ```
 
 After connecting to the container and fixing whatever needed to be fixed (here is your mission), you can see that curling port 80 return a page that contains `Hello Holberton`. Paste the command(s) you used to fix the issue in your answer file.
-
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0D-web_stack_debugging_0`
--   File: `0-give_me_a_page`
