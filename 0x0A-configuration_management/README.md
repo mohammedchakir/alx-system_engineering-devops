@@ -1,11 +1,11 @@
-0x0A. Configuration management
-==============================
+## *0x0A. Configuration management*
 
--   By Sylvain Kalache
--   Weight: 1
+`DevOps`   `SysAdmin`   `Scripting`   `CI/CD`
 
-Background Context
-------------------
+By Sylvain Kalache
+
+
+## *Background Context:*
 
 [![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/6/6a0a8024f2b1c47a9d1e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220311%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220311T121959Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9ce50e87387c9b01da2af22461873db9083bc0b6e62ba9603674d6dd1abd3029)](https://youtu.be/ogYLFyp68cI)
 
@@ -26,20 +26,17 @@ Obviously writing Puppet code for your infrastructure requires an investment of 
 
 That was me ^_^': [https://twitter.com/devopsreact/status/836971570136375296](https://alx-intranet.hbtn.io/rltoken/jIyF-Oa80s40ssG21cyNAg "https://twitter.com/devopsreact/status/836971570136375296")
 
-Resources
----------
 
+## *Resources:*
 **Read or watch**:
 
--   [Intro to Configuration Management](https://alx-intranet.hbtn.io/rltoken/GL30hu-aRcKzPOvK8JO-Bg "Intro to Configuration Management")
--   [Puppet resource type: file](https://alx-intranet.hbtn.io/rltoken/DjSqEUZh5jSvzQbr8Hn_hA "Puppet resource type: file") (*check "Resource types" for all manifest types in the left menu*)
--   [Puppet's Declarative Language: Modeling Instead of Scripting](https://alx-intranet.hbtn.io/rltoken/fZbIuIwhPZWQUQNTjsqu1A "Puppet's Declarative Language: Modeling Instead of Scripting")
--   [Puppet lint](https://alx-intranet.hbtn.io/rltoken/CRUMeEMdcX-UtbWsUM9xLQ "Puppet lint")
--   [Puppet emacs mode](https://alx-intranet.hbtn.io/rltoken/MzHXCntAkPzOqMnI6_rpWQ "Puppet emacs mode")
+- [Intro to Configuration Management](https://alx-intranet.hbtn.io/rltoken/GL30hu-aRcKzPOvK8JO-Bg "Intro to Configuration Management")
+- [Puppet resource type: file](https://alx-intranet.hbtn.io/rltoken/DjSqEUZh5jSvzQbr8Hn_hA "Puppet resource type: file") (*check "Resource types" for all manifest types in the left menu*)
+- [Puppet's Declarative Language: Modeling Instead of Scripting](https://alx-intranet.hbtn.io/rltoken/fZbIuIwhPZWQUQNTjsqu1A "Puppet's Declarative Language: Modeling Instead of Scripting")
+- [Puppet lint](https://alx-intranet.hbtn.io/rltoken/CRUMeEMdcX-UtbWsUM9xLQ "Puppet lint")
+- [Puppet emacs mode](https://alx-intranet.hbtn.io/rltoken/MzHXCntAkPzOqMnI6_rpWQ "Puppet emacs mode")
 
-Requirements
-------------
-
+## *Requirements:*
 ### General
 
 -   All your files will be interpreted on Ubuntu 20.04 LTS
@@ -50,8 +47,7 @@ Requirements
 -   Your Puppet manifests first line must be a comment explaining what the Puppet manifest is about
 -   Your Puppet manifests files must end with the extension `.pp`
 
-Note on Versioning
-------------------
+## *Note on Versioning:*
 
 Your Ubuntu 20.04 VM should have Puppet 5.5 preinstalled.
 
@@ -76,12 +72,9 @@ $ gem install puppet-lint
 
 ```
 
-Tasks
------
+## *Tasks:*
 
-### 0\. Create a file
-
-mandatory
+#### [0. Create a file]()
 
 Using Puppet, create a file in `/tmp`.
 
@@ -112,17 +105,7 @@ I love Puppetroot@6712bef7a528:~#
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0A-configuration_management`
--   File: `0-create_a_file.pp`
-
- Done? Help Check your code Get a sandbox
-
-### 1\. Install a package
-
-mandatory
+#### [1. Install a package]()
 
 Using Puppet, install `puppet-lint`.
 
@@ -146,17 +129,7 @@ root@d391259bf577:/#
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0A-configuration_management`
--   File: `1-install_a_package.pp`
-
- Done? Help Check your code Get a sandbox
-
-### 2\. Execute a command
-
-mandatory
+#### [2. Execute a command]()
 
 Using Puppet, create a manifest that kills a process named `killmenow`.
 
@@ -178,7 +151,6 @@ do
 done
 
 root@d391259bf577:/# ./killmenow
-
 ```
 
 Terminal #1 - executing my manifest
@@ -189,7 +161,6 @@ Notice: Compiled catalog for d391259bf577.hsd1.ca.comcast.net in environment pro
 Notice: /Stage[main]/Main/Exec[killmenow]/returns: executed successfully
 Notice: Finished catalog run in 0.10 seconds
 root@d391259bf577:/#
-
 ```
 
 Terminal #0 - process has been terminated
@@ -198,11 +169,4 @@ Terminal #0 - process has been terminated
 root@d391259bf577:/# ./killmenow
 Terminated
 root@d391259bf577:/#
-
 ```
-
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0A-configuration_management`
--   File: `2-execute_a_command.pp`
