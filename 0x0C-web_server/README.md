@@ -1,11 +1,10 @@
-0x0C. Web server
-================
+## *0x0C. Web server*
 
--   By Sylvain Kalache
--   Weight: 1
+`DevOps`   `SysAdmin`
 
-Concepts
---------
+By Sylvain Kalache
+
+## *Concepts:*
 
 *For this project, students are expected to look at this concept:*
 
@@ -13,8 +12,8 @@ Concepts
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/266/8Gu52Qv.png)
 
-Background Context
-------------------
+## *Background Context:*
+
 
 [![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/266/Screenshot+2017-07-06+19.24.05.png)](https://www.youtube.com/watch?v=AZg4uJkEa-4&feature=youtu.be&hd=1)
 
@@ -49,9 +48,7 @@ Tips: to test your answer Bash script, feel free to reproduce the checker enviro
 
 Check out the Docker concept page for more info about how to manipulate containers.
 
-Resources
----------
-
+## *Resources:*
 **Read or watch**:
 
 -   [How the web works](https://alx-intranet.hbtn.io/rltoken/6TI3HiyFdwrbXWKVF24Gxw "How the web works")
@@ -74,18 +71,6 @@ Resources
 -   `scp`
 -   `curl`
 
-Learning Objectives
--------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/EHyxcIwPtD2SzEGRKOnT3g "explain to anyone"), **without the help of Google**:
-
-### General
-
--   What is the main role of a web server
--   What is a child process
--   Why web servers usually have a parent process and child processes
--   What are the main HTTP requests
-
 ### DNS
 
 -   What DNS stands for
@@ -98,43 +83,10 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   `TXT`
 -   `MX`
 
-Requirements
-------------
 
-### General
+## *Tasks:*
 
--   Allowed editors: `vi`, `vim`, `emacs`
--   All your files will be interpreted on Ubuntu 16.04 LTS
--   All your files should end with a new line
--   A `README.md` file, at the root of the folder of the project, is mandatory
--   All your Bash script files must be executable
--   Your Bash script must pass `Shellcheck` (version `0.3.7`) without any error
--   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
--   The second line of all your Bash scripts should be a comment explaining what is the script doing
--   You can't use `systemctl` for restarting a process
-
-Quiz questions
---------------
-
-Show
-
-Your servers
-------------
-
-| Name | Username | IP | State |  |
-| --- | --- | --- | --- | --- |
-| 1733-web-01 | `ubuntu` | `34.139.191.175` | running |
-
-Actions Toggle Dropdown
-
- |
-
-Tasks
------
-
-### 0\. Transfer a file to your server
-
-mandatory
+#### [0. Transfer a file to your server]()
 
 Write a Bash script that transfers a file from our client to a server:
 
@@ -177,17 +129,8 @@ In this example, I:
 
 That is one way of publishing your website pages to your server.
 
-**Repo:**
 
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0C-web_server`
--   File: `0-transfer_file`
-
- Done? Help Check your code Get a sandbox
-
-### 1\. Install nginx web server
-
-mandatory
+#### [1. Install nginx web server]()
 
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/01cab59e881e31842b8d47a0974e8d3b6f0f2001.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220315%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220315T134549Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=81cfdb32532213026a2b0888b6ddc81e47eca8d150e71db99a9b7c987a536fe9)
 
@@ -241,17 +184,8 @@ In this example `34.198.248.145` is the IP of my `web-01` server. If you wan
 
 If things are not going as expected, make sure to check out Nginx logs, they can be found in `/var/log/`.
 
-**Repo:**
 
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0C-web_server`
--   File: `1-install_nginx_web_server`
-
- Done? Help Check your code
-
-### 2\. Setup a domain name
-
-mandatory
+#### [2. Setup a domain name]()
 
 [.TECH Domains](https://alx-intranet.hbtn.io/rltoken/Hcb-pfK8UiDBfwsDJPyZZw ".TECH Domains") is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
 
@@ -298,17 +232,8 @@ sylvain@ubuntu$
 
 When your domain name is setup, please verify the Registrar here: [https://whois.whoisxmlapi.com/](https://alx-intranet.hbtn.io/rltoken/UVCb6LeF54ktxR6lZSUyTQ "https://whois.whoisxmlapi.com/") and you must see in the JSON response: `"registrarName": "Dotserve Inc"`
 
-**Repo:**
 
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0C-web_server`
--   File: `2-setup_a_domain_name`
-
- Done? Help Check your code
-
-### 3\. Redirection
-
-mandatory
+#### [3. Redirection]()
 
 Readme:
 
@@ -338,17 +263,7 @@ sylvain@ubuntu$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0C-web_server`
--   File: `3-redirection`
-
- Done? Help Check your code Get a sandbox
-
-### 4\. Not found page 404
-
-mandatory
+#### [4. Not found page 404]()
 
 Configure your Nginx server to have a custom 404 page that contains the string `Ceci n'est pas une page`.
 
@@ -377,17 +292,7 @@ sylvain@ubuntu$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0C-web_server`
--   File: `4-not_found_page_404`
-
- Done? Help Check your code Get a sandbox
-
-### 5\. Install Nginx web server (w/ Puppet)
-
-#advanced
+#### [5. Install Nginx web server (w/ Puppet)]()
 
 Time to practice configuring your server with Puppet! Just as you did before, we'd like you to install and configure an Nginx server using Puppet instead of Bash. To save time and effort, you should also include resources in your manifest to perform a 301 redirect when querying /redirect_me.
 
@@ -398,8 +303,3 @@ Requirements:
 -   The redirection must be a "301 Moved Permanently"
 -   Your answer file should be a Puppet manifest containing commands to automatically configure an Ubuntu machine to respect above requirements
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x0C-web_server`
--   File: `7-puppet_install_nginx_web_server.pp`
