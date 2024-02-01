@@ -1,7 +1,7 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
+# Troubleshooting Nginx: The service initializer should indicate that Nginx is not running.
 apt-get update
 apt-get install -y nginx
-sed -i 's/\(listen \[::\]:80;\)/# \1\nlisten 80;/' /etc/nginx/sites-available/default
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
 service nginx restart
-
+pkill -o nginx
