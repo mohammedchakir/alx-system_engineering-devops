@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# server 01 login to ubuntu
+# server web-01 login to ubuntu
 
 eval $("ssh-agent")
 
-ssh-add /root/.ssh/school
+ssh-add ~/.ssh/school
 
-ssh -i ubuntu@54.237.26.209
+ssh ubuntu@18.233.62.225
