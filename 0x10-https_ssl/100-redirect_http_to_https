@@ -1,38 +1,50 @@
 global
-    log /dev/log local0
-    log /dev/log local1 notice
-    chroot /var/lib/haproxy
-    stats socket /run/haproxy/admin.sock mode 660 level admin
-    stats timeout 30s
-    user haproxy
-    group haproxy
-    daemon
+        log /dev/log    local0
+        log /dev/log    local1 notice
+        chroot /var/lib/haproxy
+        stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners
+        stats timeout 30s
+        user haproxy
+        group haproxy
+        daemon
+
+        # Default SSL material locations
+        ca-base /etc/ssl/certs
+        crt-base /etc/ssl/private
+
+        # See: https://ssl-config.mozilla.org/#server=haproxy&server-version=2.0.3&config=intermediate
+        ssl-default-bind-ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384
+        ssl-default-bind-ciphersuites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256
+        ssl-default-bind-options ssl-min-ver TLSv1.2 no-tls-tickets
 
 defaults
-    log global
-    mode http
-    option httplog
-    option dontlognull
-    timeout connect 5000
-    timeout client 50000
-    timeout server 50000
+        log     global
+        mode    http
+        option  httplog
+        option  dontlognull
+        timeout connect 5000
+        timeout client  50000
+        timeout server  50000
+        errorfile 400 /etc/haproxy/errors/400.http
+        errorfile 403 /etc/haproxy/errors/403.http
+        errorfile 408 /etc/haproxy/errors/408.http
+        errorfile 500 /etc/haproxy/errors/500.http
+        errorfile 502 /etc/haproxy/errors/502.http
+        errorfile 503 /etc/haproxy/errors/503.http
+        errorfile 504 /etc/haproxy/errors/504.http
 
-frontend www-http
+frontend medchakir-http
     bind *:80
-    reqadd X-Forwarded-Proto:\ http
-    acl is_letsencrypt path_beg -i /.well-known/acme-challenge/
-    use_backend letsencrypt if is_letsencrypt
-    default_backend www-backend
+    mode http
+    http-request set-header X-Forwarded-Proto http
+    default_backend medchakir-backend
 
-frontend medchakir.tech
-    bind *:443 ssl crt /etc/letsencrypt/live/www.holberton.online/fullchain.pem
-    reqadd X-Forwarded-Proto:\ https
-    default_backend www-backend
+frontend medchakir-https
+    bind *:443 ssl crt /etc/letsencrypt/live/www.medchakir.tech/fullchain.pem
+    http-request set-header X-Forwarded-Proto https
+    default_backend medchakir-backend
 
-backend medchakir.tech
-    balance roundrobin
-    server web-01 34.207.57.228:80 check
-    server web-02 54.160.106.44:80 check
-
-backend letsencrypt
-    server letsencrypt 127.0.0.1:54321
+backend medchakir
+        balance roundrobin
+        server 469212-web-01 18.233.62.225:80 check
+        server 469212-web-02 52.91.116.153:80 check                                                                                                                      1,1           Top
