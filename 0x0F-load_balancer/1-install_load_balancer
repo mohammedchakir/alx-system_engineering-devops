@@ -17,7 +17,7 @@ frontend  medchakir
 backend medchakir
         balance roundrobin
         server 469212-web-01 18.233.62.225:80 check
-        server 469212-web-02 34.201.164.187:80 check
+        server 469212-web-02 52.91.116.153:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 echo "ENABLED=1" | sudo tee -a /etc/default/haproxy
