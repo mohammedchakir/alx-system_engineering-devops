@@ -33,11 +33,18 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend  medchakir
-        bind *:80
-        mode http
-        default_backend medchakir
+frontend medchakir-http
+    bind *:80
+    mode http
+    http-request set-header X-Forwarded-Proto http
+    default_backend medchakir-backend
+
+frontend medchakir-https
+    bind *:443 ssl crt /etc/letsencrypt/live/www.medchakir.tech/fullchain.pem
+    http-request set-header X-Forwarded-Proto https
+    default_backend medchakir-backend
+
 backend medchakir
         balance roundrobin
         server 469212-web-01 18.233.62.225:80 check
-        server 469212-web-02 34.201.164.187:80 check
+        server 469212-web-02 52.91.116.153:80 check                                                                                                                      1,1           Top
