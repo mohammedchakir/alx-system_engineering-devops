@@ -1,8 +1,10 @@
-0x10. HTTPS SSL
-===============
+## *0x10. HTTPS SSL*
 
-Concepts
---------
+`DevOps`   `SysAdmin`   `Security`
+
+By: Sylvain Kalache, co-founder at Holberton School
+
+## *Concepts:*
 
 *For this project, students are expected to look at these concepts:*
 
@@ -11,15 +13,13 @@ Concepts
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/276/FlhGPEK.png)
 
-Background Context
-------------------
+## *Background Context:*
 
 ### What happens when you don't secure your website traffic?
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/276/xCmOCgw.gif)
 
-Resources
----------
+## *Resources:*
 
 **Read or watch**:
 
@@ -34,19 +34,13 @@ Resources
 -   `awk`
 -   `dig`
 
-Learning Objectives
--------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/fJ20wsMngb_yNAhGgBwzlQ "explain to anyone"), **without the help of Google**:
-
 ### General
 
 -   What is HTTPS SSL 2 main roles
 -   What is the purpose encrypting traffic
 -   What SSL termination means
 
-Requirements
-------------
+## *Requirements:*
 
 ### General
 
@@ -59,40 +53,10 @@ Requirements
 -   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
-Quiz questions
---------------
 
-**Great!** You've completed the quiz successfully! Keep going! (Show quiz)
+## *Tasks:*
 
-Your servers
-------------
-
-| Name | Username | IP | State |  |
-| --- | --- | --- | --- | --- |
-| 1733-web-01 | `ubuntu` | `3.235.21.36` | running |
-
-Actions Toggle Dropdown
-
- |
-| 1733-web-02 | `ubuntu` | `3.83.35.54` | running |
-
-Actions Toggle Dropdown
-
- |
-| 1733-lb-01 | `ubuntu` | `34.231.109.143` | running |
-
-Actions Toggle Dropdown
-
- |
-
-Tasks
------
-
-### 0\. World wide web
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [0. World wide web]()
 
 Configure your domain zone so that the subdomain `www` points to your load-balancer IP (`lb-01`). Let's also add other subdomains to make our life easier, and write a Bash script that will display information about subdomains.
 
@@ -149,22 +113,9 @@ sylvain@ubuntu$
 sylvain@ubuntu$ ./0-world_wide_web holberton.online web-02
 The subdomain web-02 is a A record and points to 54.89.38.100
 sylvain@ubuntu$
-
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x10-https_ssl`
--   File: `0-world_wide_web`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 1\. HAproxy SSL termination
-
-mandatory
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [1. HAproxy SSL termination]()
 
 "Terminating SSL on HAproxy" means that HAproxy is configured to handle encrypted traffic, unencrypt it and pass it on to its destination.
 
@@ -199,22 +150,9 @@ sylvain@ubuntu$
 sylvain@ubuntu$ curl https://www.holberton.online
 Holberton School for the win!
 sylvain@ubuntu$
-
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x10-https_ssl`
--   File: `1-haproxy_ssl_termination`
-
- Done? Help Check your code Ask for a new correction Get a sandbox QA Review
-
-### 2\. No loophole in your website traffic
-
-#advanced
-
-Score: 0.00% (Checks completed: 0.00%)
+#### [2. No loophole in your website traffic]()
 
 A good habit is to enforce HTTPS traffic so that no unencrypted traffic is possible. Configure HAproxy to automatically redirect HTTP traffic to HTTPS.
 
@@ -249,9 +187,3 @@ Accept-Ranges: bytes
 sylvain@ubuntu$
 
 ```
-
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x10-https_ssl`
--   File: `100-redirect_http_to_https`
