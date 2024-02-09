@@ -102,7 +102,7 @@ For this project you will be given a container which you can use to solve the ta
 
 ## *Tasks:*
 
-#### [0. Give me a page!]()
+#### [0. Give me a page!](0-give_me_a_page)
 
 Be sure to read the **Docker** concept page
 
