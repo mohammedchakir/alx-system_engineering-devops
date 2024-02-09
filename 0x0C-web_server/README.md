@@ -86,7 +86,7 @@ Check out the Docker concept page for more info about how to manipulate containe
 
 ## *Tasks:*
 
-#### [0. Transfer a file to your server]()
+#### [0. Transfer a file to your server](0-transfer_file)
 
 Write a Bash script that transfers a file from our client to a server:
 
@@ -130,7 +130,7 @@ In this example, I:
 That is one way of publishing your website pages to your server.
 
 
-#### [1. Install nginx web server]()
+#### [1. Install nginx web server](1-install_nginx_web_server)
 
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/01cab59e881e31842b8d47a0974e8d3b6f0f2001.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220315%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220315T134549Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=81cfdb32532213026a2b0888b6ddc81e47eca8d150e71db99a9b7c987a536fe9)
 
@@ -185,7 +185,7 @@ In this example `34.198.248.145` is the IP of my `web-01` server. If you wan
 If things are not going as expected, make sure to check out Nginx logs, they can be found in `/var/log/`.
 
 
-#### [2. Setup a domain name]()
+#### [2. Setup a domain name](2-setup_a_domain_name)
 
 [.TECH Domains](https://alx-intranet.hbtn.io/rltoken/Hcb-pfK8UiDBfwsDJPyZZw ".TECH Domains") is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
 
@@ -233,7 +233,7 @@ sylvain@ubuntu$
 When your domain name is setup, please verify the Registrar here: [https://whois.whoisxmlapi.com/](https://alx-intranet.hbtn.io/rltoken/UVCb6LeF54ktxR6lZSUyTQ "https://whois.whoisxmlapi.com/") and you must see in the JSON response: `"registrarName": "Dotserve Inc"`
 
 
-#### [3. Redirection]()
+#### [3. Redirection](3-redirection)
 
 Readme:
 
@@ -263,7 +263,7 @@ sylvain@ubuntu$
 
 ```
 
-#### [4. Not found page 404]()
+#### [4. Not found page 404](4-not_found_page_404)
 
 Configure your Nginx server to have a custom 404 page that contains the string `Ceci n'est pas une page`.
 
@@ -292,7 +292,7 @@ sylvain@ubuntu$
 
 ```
 
-#### [5. Install Nginx web server (w/ Puppet)]()
+#### [5. Install Nginx web server (w/ Puppet)](7-puppet_install_nginx_web_server.pp)
 
 Time to practice configuring your server with Puppet! Just as you did before, we'd like you to install and configure an Nginx server using Puppet instead of Bash. To save time and effort, you should also include resources in your manifest to perform a 301 redirect when querying /redirect_me.
 
