@@ -1,4 +1,4 @@
-## *0x0D. Web stack debugging #0*
+# *0x0D. Web stack debugging #0*
 
 `DevOps`   `SysAdmin`   `Scripting`   `Debugging`
 
