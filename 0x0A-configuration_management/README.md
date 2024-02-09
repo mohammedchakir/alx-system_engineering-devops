@@ -74,7 +74,7 @@ $ gem install puppet-lint
 
 ## *Tasks:*
 
-#### [0. Create a file]()
+#### [0. Create a file](0-create_a_file.pp)
 
 Using Puppet, create a file in `/tmp`.
 
@@ -105,7 +105,7 @@ I love Puppetroot@6712bef7a528:~#
 
 ```
 
-#### [1. Install a package]()
+#### [1. Install a package](1-install_a_package.pp)
 
 Using Puppet, install `puppet-lint`.
 
@@ -129,7 +129,7 @@ root@d391259bf577:/#
 
 ```
 
-#### [2. Execute a command]()
+#### [2. Execute a command](2-execute_a_command.pp)
 
 Using Puppet, create a manifest that kills a process named `killmenow`.
 
