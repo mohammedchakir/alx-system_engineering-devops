@@ -1,1 +1,30 @@
-#!
+# Configure ufw, blocks all incoming traffic, except TCP ports: 22 (SSH), 443 (HTTPS SSL), 80 (HTTP)
+# Install UFW if it's not installed
+sudo apt-get -y update
+sudo apt-get -y install ufw
+
+# Enable UFW
+sudo ufw enable
+
+# Allow incoming traffic on ports 22 (SSH), 80 (HTTP), and 443 (HTTPS SSL)
+sudo ufw allow 22/tcp
+sudo ufw allow 80/tcp
+sudo ufw allow 443/tcp
+
+# Deny all other incoming traffic and allow outgoing 
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+# Check the status of UFW to ensure the rules are applied correctly
+sudo ufw status
+
+
+
+
+sudo ufw disable
+
+sudo systemctl stop ufw
+sudo ufw allow 22/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 80/tcp
+sudo ufw enable
