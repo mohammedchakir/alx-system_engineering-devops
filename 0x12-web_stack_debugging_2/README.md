@@ -29,7 +29,7 @@ By Sylvain Kalache, co-founder at Holberton School
 ## *Tasks:*
 
 
-#### [0. Run software as another user]()
+#### [0. Run software as another user](0-iamsomeoneelse)
 
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/eaeff07a715ff880b1ceb8e863a1d141a74a7f85.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220404%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220404T165934Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6f669fbc7412b8d10cd9a7dacc706d543b95a18fb8b7b0ce73c2638cc64daf5b)
 
@@ -56,7 +56,7 @@ root@ubuntu:~#
 
 ```
 
-#### [1. Run Nginx as Nginx]()
+#### [1. Run Nginx as Nginx](1-run_nginx_as_nginx)
 
 The `root` user is a superuser that can do anything on a Unix machine, the top administrator. Security wise, you must do everything that you can to prevent an attacker from logging in as `root`. With this in mind, it's a good practice not to run your web servers as `root` (which is the default for most configurations) and instead run the process as the less privileged `nginx` user instead. This way, if a hacker does find a security issue that allows them to break-in to your server, the impact is limited by the permissions of the `nginx` user.
 
@@ -86,7 +86,7 @@ root@ab6f4542747e:~#
 ```
 
 
-#### [2. 7 lines or less]()
+#### [2. 7 lines or less](100-fix_in_7_lines_or_less)
 
 Using what you did for task #1, make your fix short and sweet.
 
