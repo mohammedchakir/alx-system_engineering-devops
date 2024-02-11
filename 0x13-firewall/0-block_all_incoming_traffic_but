@@ -7,7 +7,7 @@ sudo apt-get -y install ufw
 sudo ufw disable
 
 # Stop the UFW (Uncomplicated Firewall) service on a Linux system.
-sudo systemctl stop ufw
+sudo systemctl stop ufw.service
 
 
 # Allow incoming traffic on ports 22 (SSH), 80 (HTTP), and 443 (HTTPS SSL)
