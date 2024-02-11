@@ -1,11 +1,10 @@
-0x14. MySQL
-===========
+# *0x14. MySQL*
 
--   By Sylvain Kalache, co-founder at Holberton School
--   Weight: 1
 
-Concepts
---------
+By Sylvain Kalache, co-founder at Holberton School
+
+
+## *Concepts:*
 
 *For this project, students are expected to look at these concepts:*
 
@@ -15,9 +14,8 @@ Concepts
 
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/280/KkrkDHT.png)
 
-Resources
----------
 
+## *Resources:*
 **Read or watch**:
 
 -   [What is a primary-replica cluster](https://alx-intranet.hbtn.io/rltoken/eojqG9FZbA6QVWN5P9cLzA "What is a primary-replica cluster")
@@ -28,11 +26,6 @@ Resources
 
 -   `mysqldump`
 
-Learning Objectives
--------------------
-
-At the end of this project, you are expected to be able to [explain to anyone](https://alx-intranet.hbtn.io/rltoken/Lotf0yqq3mNeFHkrW67CZQ "explain to anyone"), **without the help of Google**:
-
 ### General
 
 -   What is the main role of a database
@@ -41,8 +34,8 @@ At the end of this project, you are expected to be able to [explain to anyone](
 -   Why database backups need to be stored in different physical locations
 -   What operation should you regularly perform to make sure that your database backup strategy actually works
 
-Requirements
-------------
+
+## *Requirements:*
 
 ### General
 
@@ -55,33 +48,11 @@ Requirements
 -   The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash`
 -   The second line of all your Bash scripts should be a comment explaining what is the script doing
 
-Your servers
-------------
 
-| Name | Username | IP | State |  |
-| --- | --- | --- | --- | --- |
-| 1733-web-01 | `ubuntu` | `3.235.21.36` | running |
 
-Actions Toggle Dropdown
+## *Tasks:*
 
- |
-| 1733-web-02 | `ubuntu` | `3.83.35.54` | running |
-
-Actions Toggle Dropdown
-
- |
-| 1733-lb-01 | `ubuntu` | `34.231.109.143` | running |
-
-Actions Toggle Dropdown
-
- |
-
-Tasks
------
-
-### 0\. Install MySQL
-
-mandatory
+#### [0. Install MySQL]()
 
 First things first, let's get MySQL installed on **both** your web-01 and web-02 servers.
 
@@ -98,16 +69,8 @@ ubuntu@229-web-01:~$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x14-mysql`
-
- Done? Help Check your code Get a sandbox
-
-### 1\. Let us in!
-
-mandatory
+#### [1. Let us in!]()
 
 In order for us to verify that your servers are properly configured, we need you to create a user and password for **both** MySQL databases which will allow the checker access to them.
 
@@ -129,16 +92,7 @@ ubuntu@229-web-01:~$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x14-mysql`
-
- Done? Help Check your code Get a sandbox
-
-### 2\. If only you could see what I've seen with your eyes
-
-mandatory
+#### [2. If only you could see what I've seen with your eyes]()
 
 In order for you to set up replication, you'll need to have a database with at least one table and one row in your primary MySQL server (web-01) to replicate from.
 
@@ -158,16 +112,7 @@ ubuntu@229-web-01:~$
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x14-mysql`
-
- Done? Help Check your code Get a sandbox
-
-### 3\. Quite an experience to live in fear, isn't it?
-
-mandatory
+#### [3. Quite an experience to live in fear, isn't it?]()
 
 Before you get started with your primary-replica synchronization, you need one more thing in place. On your **primary** MySQL server (web-01), create a new user for the replica server.
 
@@ -191,16 +136,8 @@ ubuntu@229-web-01:~$
 
 ```
 
-**Repo:**
 
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x14-mysql`
-
- Done? Help Check your code Get a sandbox
-
-### 4\. Setup a Primary-Replica infrastructure using MySQL
-
-mandatory
+#### [4. Setup a Primary-Replica infrastructure using MySQL]()
 
 ![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/09e83e914f0d6865ce320a47f2f14837a5b190b6.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220405%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220405T145247Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=a9ffa2bc0a20cffbd6277b226cfa32225bf0058e1a980262734c550ca2338a11)
 
@@ -320,17 +257,7 @@ mysql>
 
 ```
 
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x14-mysql`
--   File: `4-mysql_configuration_primary, 4-mysql_configuration_replica`
-
- Done? Help Check your code Get a sandbox
-
-### 5\. MySQL backup
-
-mandatory
+#### [5. MySQL backup]()
 
 [![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/280/Bbpsgif.jpg)](https://www.youtube.com/watch?v=ANU-oSE5_hU)
 
@@ -404,9 +331,3 @@ ubuntu@03-web-01:~$ file 01-03-2017.tar.gz
 ubuntu@03-web-01:~$
 
 ```
-
-**Repo:**
-
--   GitHub repository: `alx-system_engineering-devops`
--   Directory: `0x14-mysql`
--   File: `5-mysql_backup`
