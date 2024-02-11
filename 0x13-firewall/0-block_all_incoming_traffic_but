@@ -1,10 +1,14 @@
-# Configure ufw, blocks all incoming traffic, except TCP ports: 22 (SSH), 443 (HTTPS SSL), 80 (HTTP)
-# Install UFW if it's not installed
+# Configure ufw, blocks all incoming traffic, except TCP ports: 22 (SSH), 443 (HTTPS SSL), 80 (HTTP).
+# Install UFW if it's not installed.
 sudo apt-get -y update
 sudo apt-get -y install ufw
 
-# Enable UFW
-sudo ufw enable
+# Disable UFW.
+sudo ufw disable
+
+# Stop the UFW (Uncomplicated Firewall) service on a Linux system.
+sudo systemctl stop ufw
+
 
 # Allow incoming traffic on ports 22 (SSH), 80 (HTTP), and 443 (HTTPS SSL)
 sudo ufw allow 22/tcp
@@ -15,16 +19,8 @@ sudo ufw allow 443/tcp
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
+# enable the UFW.
+sudo ufw enable
+
 # Check the status of UFW to ensure the rules are applied correctly
 sudo ufw status
-
-
-
-
-sudo ufw disable
-
-sudo systemctl stop ufw
-sudo ufw allow 22/tcp
-sudo ufw allow 443/tcp
-sudo ufw allow 80/tcp
-sudo ufw enable
