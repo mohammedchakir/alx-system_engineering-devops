@@ -1,5 +1,6 @@
 # *0x12. Web stack debugging #2*
 
+`DevOps`  `SysAdmin`  `Scripting`  `Debugging`
 
 By Sylvain Kalache, co-founder at Holberton School
 
@@ -31,7 +32,7 @@ By Sylvain Kalache, co-founder at Holberton School
 
 #### [0. Run software as another user](0-iamsomeoneelse)
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/eaeff07a715ff880b1ceb8e863a1d141a74a7f85.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220404%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220404T165934Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=6f669fbc7412b8d10cd9a7dacc706d543b95a18fb8b7b0ce73c2638cc64daf5b)
+![eaeff07a715ff880b1ceb8e863a1d141a74a7f85](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/155c4175-0373-46c4-ad4f-b2887f4ad0a3)
 
 The user `root` is, on Linux, the "superuser". It can do anything it wants, that's a good and bad thing. A good practice is that one should never be logged in the `root` user, as if you fat finger a command and for example run `rm -rf /`, there is no comeback. That's why it is preferable to run as a privileged user, meaning that the user also has the ability to perform tasks that the `root` user can do, just need to use a specific command that you need to discover.
 
