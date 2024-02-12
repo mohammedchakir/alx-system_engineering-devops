@@ -9,17 +9,20 @@ sudo ufw disable
 # Stop the UFW (Uncomplicated Firewall) service on a Linux system.
 sudo systemctl stop ufw.service
 
-# Allow incoming traffic on ports 22 (SSH), 80 (HTTP), and 443 (HTTPS SSL)
+# Allow incoming traffic on ports 22 (SSH), 80 (HTTP), and 443 (HTTPS SSL).
 sudo ufw allow 22/tcp
 sudo ufw allow 80/tcp
 sudo ufw allow 443/tcp
 
-# Deny all other incoming traffic and allow outgoing 
+# Deny all other incoming traffic and allow outgoing .
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 
 # enable the UFW.
 sudo ufw enable
 
-# Check the status of UFW to ensure the rules are applied correctly
+# reload the UFW.
+sudo ufw reload
+
+# Check the status of UFW to ensure the rules are applied correctly.
 sudo ufw status verbose
