@@ -23,4 +23,4 @@ sudo ufw default allow outgoing
 sudo ufw enable
 
 # Check the status of UFW to ensure the rules are applied correctly
-sudo ufw status
+sudo ufw status verbose
