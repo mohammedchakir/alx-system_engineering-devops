@@ -28,6 +28,6 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 sudo service mysql restart
 sudo service mysql status
 
-CHANGE MASTER TO MASTER_HOST='IP web-01', MASTER_USER='replica_user', MASTER_PASSWORD='projectcorrection280hbtn', MASTER_LOG_FILE='mysql-bin.000002', MASTER_LOG_POS='358';
+CHANGE MASTER TO MASTER_HOST='IP web-01', MASTER_USER='replica_user', MASTER_PASSWORD='projectcorrection280hbtn', MASTER_PORT=3306, MASTER_LOG_FILE='mysql-bin.000002', MASTER_LOG_POS='358';
 START SLAVE;
 
