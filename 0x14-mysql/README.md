@@ -53,7 +53,7 @@ By Sylvain Kalache, co-founder at Holberton School
 
 ## *Tasks:*
 
-#### [0. Install MySQL](mysql57_installations)
+#### [0. Install MySQL](scripts/mysql57_installations)
 
 First things first, let's get MySQL installed on **both** your web-01 and web-02 servers.
 
@@ -71,7 +71,7 @@ ubuntu@229-web-01:~$
 ```
 
 
-#### [1. Let us in!](instructions)
+#### [1. Let us in!](scripts/instructions)
 
 In order for us to verify that your servers are properly configured, we need you to create a user and password for **both** MySQL databases which will allow the checker access to them.
 
