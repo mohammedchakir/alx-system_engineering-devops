@@ -1,3 +1,33 @@
-# scripts discribes the proccesses of creating user and replica
+# scripts discribes the proccesses of creating user and replica of all the project
 
+# creating user on both servers 01 & 02 and grants privilegies
+CREATE USER 'holberton_user'@'localhost' IDENTIFIED BY 'projectcorrection280hbtn';
+GRANT REPLICATION CLIENT ON *.* TO 'holberton_user'@'localhost';
+
+# create database named tyrell_corp
+CREATE DATABASE IF NOT EXISTS tyrell_corp;
+
+USE tyrell_corp;
+CREATE TABLE IF NOT EXISTS nexus6 (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255)
+);
+
+INSERT INTO nexus6 (name) VALUES ('Leon');
+GRANT SELECT ON tyrell_corp.nexus6 TO 'holberton_user'@'localhost';
+FLUSH PRIVILEGES;
+
+# Create replica_user with appropriate permissions for replication
+CREATE USER 'replica_user'@'%' IDENTIFIED BY 'your_password';
+GRANT REPLICATION SLAVE ON *.* TO 'replica_user'@'%';
+GRANT SELECT ON mysql.user TO 'holberton_user'@'localhost';
+FLUSH PRIVILEGES;
+
+# Configure MySQL Primary Server (web-01) and (web-02)
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+sudo service mysql restart
+sudo service mysql status
+
+CHANGE MASTER TO MASTER_HOST='IP web-01', MASTER_USER='replica_user', MASTER_PASSWORD='projectcorrection280hbtn', MASTER_LOG_FILE='mysql-bin.000002', MASTER_LOG_POS='358';
+START SLAVE;
 
