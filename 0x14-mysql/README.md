@@ -93,7 +93,7 @@ ubuntu@229-web-01:~$
 
 ```
 
-#### [2. If only you could see what I've seen with your eyes](instructions)
+#### [2. If only you could see what I've seen with your eyes](scripts/instructions)
 
 In order for you to set up replication, you'll need to have a database with at least one table and one row in your primary MySQL server (web-01) to replicate from.
 
@@ -113,7 +113,7 @@ ubuntu@229-web-01:~$
 
 ```
 
-#### [3. Quite an experience to live in fear, isn't it?](instructions)
+#### [3. Quite an experience to live in fear, isn't it?](scripts/instructions)
 
 Before you get started with your primary-replica synchronization, you need one more thing in place. On your **primary** MySQL server (web-01), create a new user for the replica server.
 
@@ -138,7 +138,7 @@ ubuntu@229-web-01:~$
 ```
 
 
-#### [4. Setup a Primary-Replica infrastructure using MySQL](instructions)
+#### [4. Setup a Primary-Replica infrastructure using MySQL](scripts/instructions)
 
 ![09e83e914f0d6865ce320a47f2f14837a5b190b6](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/9088b133-aebe-4c8c-b88a-609c74b1fb85)
 
