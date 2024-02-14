@@ -53,7 +53,7 @@ By Sylvain Kalache, co-founder at Holberton School
 
 ## *Tasks:*
 
-#### [0. Install MySQL]()
+#### [0. Install MySQL](mysql57_installations)
 
 First things first, let's get MySQL installed on **both** your web-01 and web-02 servers.
 
@@ -71,7 +71,7 @@ ubuntu@229-web-01:~$
 ```
 
 
-#### [1. Let us in!]()
+#### [1. Let us in!](instructions)
 
 In order for us to verify that your servers are properly configured, we need you to create a user and password for **both** MySQL databases which will allow the checker access to them.
 
@@ -93,7 +93,7 @@ ubuntu@229-web-01:~$
 
 ```
 
-#### [2. If only you could see what I've seen with your eyes]()
+#### [2. If only you could see what I've seen with your eyes](instructions)
 
 In order for you to set up replication, you'll need to have a database with at least one table and one row in your primary MySQL server (web-01) to replicate from.
 
@@ -113,7 +113,7 @@ ubuntu@229-web-01:~$
 
 ```
 
-#### [3. Quite an experience to live in fear, isn't it?]()
+#### [3. Quite an experience to live in fear, isn't it?](instructions)
 
 Before you get started with your primary-replica synchronization, you need one more thing in place. On your **primary** MySQL server (web-01), create a new user for the replica server.
 
@@ -138,7 +138,7 @@ ubuntu@229-web-01:~$
 ```
 
 
-#### [4. Setup a Primary-Replica infrastructure using MySQL]()
+#### [4. Setup a Primary-Replica infrastructure using MySQL](instructions)
 
 ![09e83e914f0d6865ce320a47f2f14837a5b190b6](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/9088b133-aebe-4c8c-b88a-609c74b1fb85)
 
@@ -258,7 +258,7 @@ mysql>
 
 ```
 
-#### [5. MySQL backup]()
+#### [5. MySQL backup](5-mysql_backup)
 
 [![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/280/Bbpsgif.jpg)](https://www.youtube.com/watch?v=ANU-oSE5_hU)
 
