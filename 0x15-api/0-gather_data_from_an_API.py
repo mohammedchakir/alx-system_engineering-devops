@@ -3,21 +3,20 @@
 This script retrieves information about an employee's
 TODO list progress using the JSONPlaceholder REST API.
 """
-
 import requests
 import sys
 
 
 if __name__ == '__main__':
-    employee_Id = sys.argv[1]
-    base_Url = "https://jsonplaceholder.typicode.com/users"
-    url = base_Url + "/" + employee_Id
+    employeeId = sys.argv[1]
+    baseUrl = "https://jsonplaceholder.typicode.com/users"
+    url = baseUrl + "/" + employeeId
 
     response = requests.get(url)
-    employee_Name = response.json().get('name')
+    employeeName = response.json().get('name')
 
-    todo_Url = url + "/todos"
-    response = requests.get(todo_Url)
+    todoUrl = url + "/todos"
+    response = requests.get(todoUrl)
     tasks = response.json()
     done = 0
     done_tasks = []
@@ -28,7 +27,7 @@ if __name__ == '__main__':
             done += 1
 
     print("Employee {} is done with tasks({}/{}):"
-          .format(employee_Name, done, len(tasks)))
+          .format(employeeName, done, len(tasks)))
 
     for task in done_tasks:
         print("\t {}".format(task.get('title')))
