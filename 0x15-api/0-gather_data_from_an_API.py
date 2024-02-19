@@ -7,10 +7,6 @@ import requests
 import sys
 
 
-import requests
-import sys
-
-
 def main():
     """ def com """
     id = sys.argv[1]
