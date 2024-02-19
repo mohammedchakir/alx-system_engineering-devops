@@ -7,6 +7,7 @@ using the given employee ID and displays it in the specified format.
 import requests
 import sys
 
+
 def get_employee_todo_progress(employee_id):
     """
     Retrieves and displays information about an employee's TODO list progress.
