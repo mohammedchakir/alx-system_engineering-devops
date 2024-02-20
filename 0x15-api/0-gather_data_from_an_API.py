@@ -2,8 +2,8 @@
 """
 This script retrieves and displays TODO list progress for a given employee ID.
 """
-from requests import get
-from sys import argv
+import requests
+import sys
 
 
 if __name__ == '__main__':
