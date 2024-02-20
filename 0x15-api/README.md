@@ -4,7 +4,7 @@
 
 By Sylvain Kalache, co-founder at Holberton School
 
-
+![Photo-1-Lexique-API](https://github.com/mohammedchakir/alx-higher_level_programming/assets/129831433/81ee9a12-b5f0-4bbb-b128-696c9a7677fa)
 
 ## *Background Context:*
 
