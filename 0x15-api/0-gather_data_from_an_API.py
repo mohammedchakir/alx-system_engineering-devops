@@ -11,7 +11,7 @@ if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: python3 gather_data_from_an_API.py <employee_id>")
         sys.exit(1)
-    
+
     employeeId = sys.argv[1]
     baseUrl = "https://jsonplaceholder.typicode.com/users"
     url = f"{baseUrl}/{employeeId}"
