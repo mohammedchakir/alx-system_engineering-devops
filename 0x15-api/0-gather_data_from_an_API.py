@@ -7,26 +7,34 @@ import sys
 
 
 if __name__ == '__main__':
+    # Check if the correct number of arguments is provided
+    if len(sys.argv) != 2:
+        print("Usage: python3 gather_data_from_an_API.py <employee_id>")
+        sys.exit(1)
+    
     employeeId = sys.argv[1]
     baseUrl = "https://jsonplaceholder.typicode.com/users"
-    url = baseUrl + "/" + employeeId
+    url = f"{baseUrl}/{employeeId}"
 
+    # Fetch employee name
     response = requests.get(url)
+    if response.status_code != 200:
+        print("Error: Employee not found")
+        sys.exit(1)
     employeeName = response.json().get('name')
 
-    todoUrl = url + "/todos"
+    # Fetch employee's tasks
+    todoUrl = f"{url}/todos"
     response = requests.get(todoUrl)
     tasks = response.json()
-    done = 0
-    done_tasks = []
 
-    for task in tasks:
-        if task.get('completed'):
-            done_tasks.append(task)
-            done += 1
+    # Count completed tasks and store them
+    completed_tasks = [task for task in tasks if task.get('completed')]
+    done = len(completed_tasks)
 
-    print("Employee {} is done with tasks({}/{}):"
-          .format(employeeName, done, len(tasks)))
+    # Print employee's progress
+    print(f"Employee {employeeName} is done with tasks({done}/{len(tasks)}):")
 
-    for task in done_tasks:
-        print("\t {}".format(task.get('title')))
+    # Print titles of completed tasks with proper indentation
+    for task in completed_tasks:
+        print(f"\t{task.get('title')}")
