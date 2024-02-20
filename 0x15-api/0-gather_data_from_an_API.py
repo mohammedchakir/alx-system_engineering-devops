@@ -7,34 +7,28 @@ import sys
 
 
 if __name__ == '__main__':
-    # Check if the correct number of arguments is provided
-    if len(sys.argv) != 2:
-        print("Usage: python3 gather_data_from_an_API.py <employee_id>")
-        sys.exit(1)
+    url = "https://jsonplaceholder.typicode.com/"
 
     employeeId = sys.argv[1]
-    baseUrl = "https://jsonplaceholder.typicode.com/users"
-    url = f"{baseUrl}/{employeeId}"
 
-    # Fetch employee name
-    response = requests.get(url)
-    if response.status_code != 200:
-        print("Error: Employee not found")
-        sys.exit(1)
-    employeeName = response.json().get('name')
+    user_response = requests.get(url + "users/{}".format(employeeId))
 
-    # Fetch employee's tasks
-    todoUrl = f"{url}/todos"
-    response = requests.get(todoUrl)
-    tasks = response.json()
+    user = user_response.json()
 
-    # Count completed tasks and store them
-    completed_tasks = [task for task in tasks if task.get('completed')]
-    done = len(completed_tasks)
+    params = {"userId": employeeId}
 
-    # Print employee's progress
-    print(f"Employee {employeeName} is done with tasks({done}/{len(tasks)}):")
+    todos_response = requests.get(url + "todos", params=params)
+   
+    todos = todos_response.json()
 
-    # Print titles of completed tasks with proper indentation
-    for task in completed_tasks:
-        print(f"\t{task.get('title')}")
+    completed = []
+
+    for todo in todos:
+        if todo.get("completed") is True:
+            completed.append(todo.get("title"))
+
+    print("Employee {} is done with tasks ({}/{})".format(user.get("name"),
+                                                          len(completed), len(todos)))
+
+    for complete in completed:
+        print("\t {}".format(complete))
