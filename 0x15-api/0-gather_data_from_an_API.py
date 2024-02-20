@@ -4,9 +4,9 @@
 This script retrieves information about an employee's TODO list progress
 using the given employee ID and displays it in the specified format.
 """
-
 import requests
 import sys
+
 
 def get_employee_todo_progress(employee_id):
     """
@@ -37,8 +37,7 @@ def get_employee_todo_progress(employee_id):
     # Display progress
     print(f"Employee {employee_name} is done with tasks "
           f"({len(completed_tasks)}/{total_tasks}):")
-    
-    # Display completed tasks
+
     for task in completed_tasks:
         print(f"\t{task['title']}")
 
