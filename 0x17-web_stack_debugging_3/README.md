@@ -48,7 +48,7 @@ $ gem install puppet-lint -v 2.1.1
 
 ## *Tasks:*
 
-#### [0. Strace is your friend]()
+#### [0. Strace is your friend](0-strace_is_your_friend.pp)
 
 [![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/6/f5af5167e65bd3101f76.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220427%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220427T010504Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=268749714454cbf9cb702845b19b5319279abc4303dbd1762458d06795213fd8)](https://youtu.be/uHEzt1QuASo)[](http://savefrom.net/?url=https%3A%2F%2Fyoutu.be%2FuHEzt1QuASo&utm_source=userjs-chrome&utm_medium=extensions&utm_campaign=link_modifier "Obtenir un lien direct")
 
