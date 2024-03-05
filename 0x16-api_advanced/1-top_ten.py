@@ -1,19 +1,38 @@
 #!/usr/bin/python3
-"""
-this doc for module
-"""
-import requests
+"""Query Reddit API, print titles of 10 hot posts in subreddit"""
 
-headers = {"User-Agent": "MyCustomUserAgent/1.0"}
+from requests import get
 
 
 def top_ten(subreddit):
-    """method doc"""
-    url = "https://www.reddit.com/r/{}/hot.json?limit=10".format(subreddit)
-    response = requests.get(url, allow_redirects=False, headers=headers)
-    if response.status_code == 200:
-        data = response.json()
-        for post in data["data"]["children"]:
-            print(post["data"]["title"])
-    else:
+    """
+    Queries the Reddit API and prints the titles of the first
+    10 hot posts listed for a given subreddit.
+    Args:
+        subreddit (str): The name of the subreddit.
+    Returns:
+        None
+    """
+    if subreddit is None:
         print("None")
+        return
+
+    user_agent = {'User-Agent': 'my_bot/1.0'}
+    params = {'limit': 10}
+    url = f"https://www.reddit.com/r/{subreddit}/hot/.json"
+
+    try:
+        response = get(url, headers=user_agent, params=params)
+        response.raise_for_status()
+
+        results = response.json()
+        posts = results.get('data', {}).get('children', [])
+
+        if posts:
+            print(f"Top 10 hot posts in r/{subreddit}:")
+            for post in posts:
+                print(post.get('data', {}).get('title'))
+        else:
+            print("None")
+    except Exception as e:
+        print(f"An error occurred: {e}")
