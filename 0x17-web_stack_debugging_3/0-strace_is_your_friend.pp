@@ -1,20 +1,15 @@
 # This Puppet manifest fixes the issue causing Apache to return a 500 error
-
-# Ensure Apache configuration file exists
-file { '/etc/apache2/apache2.conf':
-  ensure  => present,
-  content => "This is the corrected Apache configuration file\n",
-  notify  => Service['apache2'],
+# Tmux find that the error is a "phpp" located in /var/www/html/wp-settings.php
+# Uses of exec to correct line in wp-settings.php using sed
+exec { 'fix_wp_settings_error':
+  command     => 'sed -i s/phpp/php/g /var/www/html/wp-settings.php',
+  path        => '/usr/local/bin:/bin/',
+  refreshonly => true,
+  notify      => Service['apache2'],
 }
 
-# Define Apache package
-package { 'apache2':
-  ensure => installed,
-}
-
-# Ensure Apache service is running and enabled
+# Define Apache service to ensure it's running
 service { 'apache2':
-  ensure  => running,
-  enable  => true,
-  require => Package['apache2'],
+  ensure => running,
+  enable => true,
 }
