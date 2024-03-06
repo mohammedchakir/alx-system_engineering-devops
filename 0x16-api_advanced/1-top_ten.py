@@ -13,26 +13,19 @@ def top_ten(subreddit):
     Returns:
         None
     """
-    if subreddit is None:
+    if subreddit is None or not isinstance(subreddit, str):
         print("None")
-        return
-
-    user_agent = {'User-Agent': 'my_bot/1.0'}
+    user_agent = {'User-agent': 'Google Chrome Version 81.0.4044.129'}
     params = {'limit': 10}
-    url = f"https://www.reddit.com/r/{subreddit}/hot/.json"
+    url = 'https://www.reddit.com/r/{}/hot/.json'.format(subreddit)
+
+    response = get(url, headers=user_agent, params=params)
+    results = response.json()
 
     try:
-        response = get(url, headers=user_agent, params=params)
-        response.raise_for_status()
+        my_data = results.get('data').get('children')
+        for i in my_data:
+            print(i.get('data').get('title'))
 
-        results = response.json()
-        posts = results.get('data', {}).get('children', [])
-
-        if posts:
-            print(f"Top 10 hot posts in r/{subreddit}:")
-            for post in posts:
-                print(post.get('data', {}).get('title'))
-        else:
-            print("None")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    except Exception:
+        print("None")
