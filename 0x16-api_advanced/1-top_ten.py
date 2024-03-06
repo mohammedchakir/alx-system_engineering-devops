@@ -13,26 +13,14 @@ def top_ten(subreddit):
     Returns:
         None
     """
-    if subreddit is None:
-        print("None")
-        return
+    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+    headers = {'User-Agent': 'MyBot/0.1'}
+    response = get(url, headers=headers, allow_redirects=False)
 
-    user_agent = {'User-Agent': 'my_bot/1.0'}
-    params = {'limit': 10}
-    url = f"https://www.reddit.com/r/{subreddit}/hot/.json"
-
-    try:
-        response = get(url, headers=user_agent, params=params)
-        response.raise_for_status()
-
-        results = response.json()
-        posts = results.get('data', {}).get('children', [])
-
-        if posts:
-            print(f"Top 10 hot posts in r/{subreddit}:")
-            for post in posts:
-                print(post.get('data', {}).get('title'))
-        else:
-            print("None")
-    except Exception as e:
-        print(f"An error occurred: {e}")
+    if response.status_code == 200:
+        data = response.json()
+        posts = data['data']['children']
+        for post in posts:
+            print(post['data']['title'])
+    else:
+        print(None)

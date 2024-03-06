@@ -1,5 +1,7 @@
 ## *0x18. Webstack monitoring*
 
+`DevOps` `SysAdmin` `monitoring`
+
 By Sylvain Kalache, co-founder at Holberton School
 
 
@@ -79,7 +81,7 @@ Among the litany of data your monitoring service can report to you are system me
 -   Set up a monitor that checks the number of write requests issued to the device per second.
 
 
-#### [2. Create a dashboard]()
+#### [2. Create a dashboard](2-setup_datadog)
 
 Now create a dashboard with different metrics displayed in order to get a few different visualizations.
 
