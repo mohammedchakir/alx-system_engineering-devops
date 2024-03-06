@@ -14,7 +14,7 @@ def top_ten(subreddit):
         None
     """
     url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
-    headers = {'User-Agent': 'MyBot/0.1'}  # Setting a custom User-Agent
+    headers = {'User-Agent': 'MyBot/0.1'}
     response = get(url, headers=headers, allow_redirects=False)
 
     if response.status_code == 200:
