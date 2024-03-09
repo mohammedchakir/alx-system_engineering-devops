@@ -42,5 +42,5 @@ frontend medchakir_front
 
 backend medchakir_back
         balance roundrobin
-        server 469212-web-01 18.233.62.225:80 check
+        server 469212-web-01 34.202.159.64:80 check
         server 469212-web-02 52.91.116.153:80 check
