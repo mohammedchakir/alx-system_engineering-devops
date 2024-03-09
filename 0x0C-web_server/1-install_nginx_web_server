@@ -7,4 +7,7 @@ apt-get -y install nginx
 ufw allow 'Nginx HTTP'
 # create an index.html in www.
 echo "Hello World!" > /var/www/html/index.html
-service nginx start
+sudo nginx -t
+sudo service nginx restart
+sudo service nginx reload
+sudo service nginx status
