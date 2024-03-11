@@ -12,7 +12,7 @@ By Sylvain Kalache, co-founder at Holberton School
 -   [Server](https://alx-intranet.hbtn.io/concepts/67)
 -   [Web stack debugging](https://alx-intranet.hbtn.io/concepts/68)
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/9/c7d1ed0a2e10d1b4e9b3.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220509%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220509T135639Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=18505e64c5c07265783b06401b75fba59864a9f8223831a31b28266d77c53490)
+![app server](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/f70992de-e75c-4bf2-b168-4ba2a381024e)
 
 ## *Background Context:*
 
