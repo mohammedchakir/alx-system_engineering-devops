@@ -7,7 +7,7 @@ gunicorn_pids=$(pgrep gunicorn)
 # Iterate over each PID and gracefully reload the Gunicorn instance
 for pid in $gunicorn_pids; do
     echo "Reloading Gunicorn with PID: $pid"
-    kill -HUP $pid
+    kill -HUP "$pid"
 done
 
 echo "Gunicorn reloaded without downtime"
