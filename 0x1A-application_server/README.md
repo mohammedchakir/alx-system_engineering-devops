@@ -303,10 +303,10 @@ Requirements:
 
 After loading, your website should look like this:
 
-![](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2020/9/7a8a7c33021b1b74f9cdc1fd8f855bdb1f8cd44e.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20220509%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220509T135640Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3a45a674fb1a201f3063617cfa8c3c30bc3d2724a2f75b4473f450a5902eb251)
-
+![7a8a7c33021b1b74f9cdc1fd8f855bdb1f8cd44e](https://github.com/mohammedchakir/alx-system_engineering-devops/assets/129831433/d8298cd5-a775-44cc-9129-1cfc49172d2b)
 
 -   File: `5-app_server-nginx_config`
+
 
 
 #### [6. Deploy it!](gunicorn.service)
