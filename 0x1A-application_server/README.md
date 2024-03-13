@@ -1,5 +1,6 @@
 # *0x1A. Application server*
 
+`DevOps`  `SysAdmin`
 
 By Sylvain Kalache, co-founder at Holberton School
 
