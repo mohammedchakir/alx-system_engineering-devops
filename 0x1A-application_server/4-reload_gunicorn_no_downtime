@@ -2,4 +2,4 @@
 # Bash script to reload Gunicorn without downtime
 
 #ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
-pgrep gunicorn | xargs -I {} kill -HUP {}
+pgrep gunicorn | xargs -I {} kill -HUP {}add
