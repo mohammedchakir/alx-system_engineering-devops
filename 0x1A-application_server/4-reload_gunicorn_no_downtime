@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 # Bash script to reload Gunicorn without downtime
 
-#ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
-<<<<<<< HEAD
-pgrep gunicorn | xargs -I {} kill -HUP {}add
-=======
+# ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
 pgrep gunicorn | xargs -I {} kill -HUP {}
->>>>>>> cc868e72b4356c34d3bd07230142aae9f0a1c31a
