@@ -2,5 +2,3 @@
 # Bash script to reload Gunicorn without downtime
 
 pgrep gunicorn | xargs kill -HUP
-
-echo "Gunicorn reloaded without downtime"
