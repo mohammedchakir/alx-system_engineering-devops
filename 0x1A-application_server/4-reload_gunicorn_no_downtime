@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Bash script to reload Gunicorn without downtime
 
-ps aux | grep gunicorn | xargs kill -HUP
+pgrep gunicorn | xargs kill -HUP
 
 echo "Gunicorn reloaded without downtime"
