@@ -1,5 +1,5 @@
 [Unit]
-Description=Gunicorn instance to serve AirBnB_clone
+Description=Gunicorn instance to serve AirBnB clone
 After=network.target
 
 [Service]
